@@ -17,7 +17,7 @@ public class KarelMejorada extends Karel{
 	 * para completar un giro a la derecha
 	 */
 
-	public void giraDerecha() {
+	public	void giraDerecha() {
 		turnLeft();
 		turnLeft();
 		turnLeft();
