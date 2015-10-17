@@ -8,7 +8,7 @@
  */
 import stanford.karel.*;
 
-public class CollectNewspaperKarel extends Karel {
+public class CollectNewspaperKarel extends karelMejorada {
 
 		public void run(){ 
 		while (frontIsClear()){
@@ -17,6 +17,6 @@ public class CollectNewspaperKarel extends Karel {
 			}
 			turnLeft();
 		}
-
+	
 	}
 }
