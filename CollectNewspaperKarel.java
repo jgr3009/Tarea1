@@ -10,17 +10,7 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends Karel {
 
-	public void run(){
-
-		// moverHastaPared
-		// girar a la derecha
-		// cuando no haya pared girar a la izquierda
-		// cuando haya un beeper cogerlo y dar la vuelta
-
-	
-	private void pared() {
-		move();
-	}
+		public void run(){ 
 		while (frontIsClear()){
 			while (frontIsClear()){
 				move();
