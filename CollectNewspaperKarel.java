@@ -17,9 +17,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 		// cuando no haya pared girar a la izquierda
 		// cuando haya un beeper cogerlo y dar la vuelta
 
-		private void moverHastaPared() {
-			move();
-		}
+		
 
 	}
 }
