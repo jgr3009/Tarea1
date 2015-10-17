@@ -48,7 +48,7 @@ public class KarelMejorada extends Karel{
 		 
 	 }
 	 public void moverHasta(){
-		 
+		 move();
 	 }
 	 
 		}

@@ -11,6 +11,7 @@ public class Ejercicio1 extends KarelMejorada{
 				move();
 			}
 			turnLeft();
+			
 		}
 	}
 }
