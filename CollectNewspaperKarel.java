@@ -8,15 +8,25 @@
  */
 import stanford.karel.*;
 
-public class CollectNewspaperKarel extends KarelMejorada {
+public class CollectNewspaperKarel extends Karel {
 
-		public void run(){ 
-		while (frontIsClear()){
+	public void run(){
+
+		// moverHastaPared
+		// girar a la derecha
+		// cuando no haya pared girar a la izquierda
+		// cuando haya un beeper cogerlo y dar la vuelta
+
+	
+			while (frontIsClear()){
 			while (frontIsClear()){
 				move();
 			}
 			turnLeft();
 		}
+
+	}
+	private void moverHastaPared(){
 	
 	}
 }
