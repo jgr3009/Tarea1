@@ -17,8 +17,8 @@ public class CollectNewspaperKarel extends Karel {
 		// cuando no haya pared girar a la izquierda
 		// cuando haya un beeper cogerlo y dar la vuelta
 
-	moverHasta();
-	private void (pared()) {
+	
+	private void pared() {
 		move();
 	}
 		while (frontIsClear()){
