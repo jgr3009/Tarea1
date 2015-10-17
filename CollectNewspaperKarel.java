@@ -8,7 +8,7 @@
  */
 import stanford.karel.*;
 
-public class CollectNewspaperKarel extends Karel {
+public class CollectNewspaperKarel extends KarelMejorada {
 
 	public void run(){
 
