@@ -22,7 +22,7 @@ public class CollectNewspaperKarel extends Karel {
 			while (frontIsClear()){
 				move();
 			}
-			turnLeft();
+			giraDerecha();
 		}
 
 	}
