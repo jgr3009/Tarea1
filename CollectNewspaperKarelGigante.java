@@ -29,13 +29,12 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 		}						
 		if (leftIsClear()){
 			turnLeft();
-		while (frontIsClear()){
+		if (frontIsClear()){
 			move();
 			if (beepersPresent()){
 				pickBeeper();
 				dalaVuelta();
-				giraDerecha();
-
+				
 		}
 		}
 		}			
