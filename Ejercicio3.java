@@ -9,7 +9,7 @@ public class Ejercicio3 extends KarelMejorada {
 		retornaAlInicio();
 	}
 	private void recogeTodosLosBeepers(){
-		while (frontIsClear()){
+		if (frontIsClear()){
 			limpiaUnaColumna();
 			move();
 		}
