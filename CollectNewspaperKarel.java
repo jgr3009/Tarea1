@@ -18,16 +18,14 @@ public class CollectNewspaperKarel extends KarelMejorada {
 		// cuando haya un beeper cogerlo y dar la vuelta
 
 	
-			while (frontIsClear()){
+		while (frontIsClear()){
 			while (frontIsClear()){
 				move();
-				
+			
 			}
 			giraDerecha();
 		}
 
 	}
-	private void moverHastaPared(){
-			
-	}
+	
 }
