@@ -64,6 +64,6 @@ public class KarelMejorada extends Karel{
 				giraDerecha();
 			}
 		
-		giraDerecha();
+		putBeeper();
 		}
 }
