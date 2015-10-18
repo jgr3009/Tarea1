@@ -21,10 +21,10 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 		
 		while (frontIsClear()){
 			move();
-		}
+		
 		while (frontIsBlocked()){
 				giraDerecha();
-								
+		}						
 						
 		}
 				
