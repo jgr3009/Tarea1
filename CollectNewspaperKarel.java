@@ -29,7 +29,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 					pickBeeper();
 					dalaVuelta();
 				}
-				if (facingWest()){
+				if (frontIsClear()){
 					move();
 				}
 			}
