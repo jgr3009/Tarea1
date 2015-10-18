@@ -49,7 +49,7 @@ public class KarelMejorada extends Karel{
 		 giraDerecha();
 		 
 	 }
-	 private void retornaAlInicio(){
+	 public void retornaAlInicio(){
 		 dalaVuelta();
 		 while (frontIsClear()){
 		 move();
