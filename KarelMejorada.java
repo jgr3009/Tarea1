@@ -29,7 +29,7 @@ public class KarelMejorada extends Karel{
 	 * Da media vuelta a Karel dando dos giros a la izquierda.
 	 */
 
-	public void dalaVuelta() {
+	public void daLaVuelta() {
 		turnLeft();
 		turnLeft();
 	}
@@ -44,7 +44,7 @@ public class KarelMejorada extends Karel{
 		giraDerecha();
 		move();
 		putBeeper();
-		dalaVuelta();
+		daLaVuelta();
 		move();
 		giraDerecha();
 
@@ -55,7 +55,7 @@ public class KarelMejorada extends Karel{
 	 */
 
 	public void retornaAlInicio(){
-		dalaVuelta();
+		daLaVuelta();
 		while (frontIsClear()){
 			move();
 		}
