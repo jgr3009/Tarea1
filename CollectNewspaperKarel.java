@@ -33,7 +33,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 					move();
 				}
 			}
-						giraDerecha();
+			retornaAlInicio();
 			
 		}
 
