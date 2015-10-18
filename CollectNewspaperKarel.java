@@ -24,25 +24,19 @@ public class CollectNewspaperKarel extends KarelMejorada {
 				if (leftIsClear()){
 					turnLeft();
 				}
-						if (beepersPresent()){
-							pickBeeper();
-							retornaAlInicio();
-							putBeeper();
-							
-						
-				
-					
-						
+				if (beepersPresent()){
+					pickBeeper();
+					retornaAlInicio();
+					putBeeper();
+
+				}
+
 			}
-
-			
-
+			giraDerecha();
 		}
 		giraDerecha();
-		}
-		giraDerecha();
-		}
 	}
-		
-	
+}
+
+
 
