@@ -50,7 +50,8 @@ public class KarelMejorada extends Karel{
 
 	}
 	public void retornaAlInicio(){
-				while (frontIsClear()){
+		turnLeft();
+		while (frontIsClear()){
 			move();
 			if (frontIsBlocked()){
 				giraDerecha();
@@ -61,7 +62,7 @@ public class KarelMejorada extends Karel{
 
 			}
 		}
-		turnLeft();
+		
 
 	}
 }
