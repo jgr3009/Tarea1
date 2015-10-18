@@ -18,10 +18,10 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 		// cuando haya un beeper cogerlo y dar la vuelta
 
 
-		while (frontIsClear()){
+		
 			while (frontIsClear()){
 				move();
-				giraDerecha();
+				
 				if (leftIsClear()){
 					turnLeft();
 					while (frontIsClear()){
@@ -29,11 +29,12 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 
 						if (beepersPresent()){
 							pickBeeper();
-							retornaAlInicio();				}
+							retornaAlInicio();	
+							}
 					}
 				}
 
-			}
+			
 
 			
 		}
