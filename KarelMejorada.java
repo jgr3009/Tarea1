@@ -1,4 +1,6 @@
 
+import com.sun.org.apache.bcel.internal.generic.DADD;
+
 /*
  * Autor: Jorge García
  * 
@@ -47,5 +49,10 @@ public class KarelMejorada extends Karel{
 		 giraDerecha();
 		 
 	 }
-		 
+	 private void retornaAlInicio(){
+		 dalaVuelta();
+		 while (frontIsClear()){
+		 move();
+		 }
+		 dalaVuelta();	 
 		}
