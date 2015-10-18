@@ -15,8 +15,8 @@ public class KarelMejorada extends Karel{
 
 
 	/*
-	 * Gira a la derecha realiza tres giros a la izquierda
-	 * para completar un giro a la derecha
+	 * Gira a la derecha realizando tres giros a la izquierda
+	 * para completar un giro a la derecha.
 	 */
 
 	public	void giraDerecha() {
@@ -26,7 +26,7 @@ public class KarelMejorada extends Karel{
 	}
 
 	/*
-	 * Da media vuelta a Karel dando dos giros a la izquierda
+	 * Da media vuelta a Karel dando dos giros a la izquierda.
 	 */
 
 	public void dalaVuelta() {
@@ -36,7 +36,7 @@ public class KarelMejorada extends Karel{
 
 	/*
 	 * Rellena agujero, lo que supone que Karel está mirando  
-	 * hacia el Este, que tiene un hueco debajo y que va poner
+	 * hacia el Este, que tiene un hueco debajo y que va a poner
 	 * un beeper en si
 	 */
 
@@ -50,6 +50,10 @@ public class KarelMejorada extends Karel{
 
 	}
 
+	/*
+	 * Hace que Karel de la vuelta, se mueva y gire a la derecha.
+	 */
+
 	public void retornaAlInicio(){
 		dalaVuelta();
 		while (frontIsClear()){
@@ -57,9 +61,4 @@ public class KarelMejorada extends Karel{
 		}
 		giraDerecha();
 	}
-
-
-
-
-
 }
