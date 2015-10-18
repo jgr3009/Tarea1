@@ -54,12 +54,12 @@ public class KarelMejorada extends Karel{
 			dalaVuelta();
 			if (frontIsBlocked()){
 				giraDerecha();
-											
+				if (facingNorth()){
+					turnLeft();
+								}						
 						
 		}
-			if (facingNorth()){
-				turnLeft();
-							}
-			putBeeper();
+			
+		
 			}
 }
