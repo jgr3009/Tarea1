@@ -31,7 +31,7 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 					putBeeper();
 
 				}
-move();
+					move();
 			}
 			giraDerecha();
 
