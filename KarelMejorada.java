@@ -55,10 +55,7 @@ public class KarelMejorada extends Karel{
 			move();
 			
 			
-			if (facingNorth()){
-				move();
-
-			}
+			
 		}
 		if (frontIsBlocked()){
 			giraDerecha();
