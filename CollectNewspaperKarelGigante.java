@@ -27,7 +27,7 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 							pickBeeper();
 							retornaAlInicio();	
 							}
-					}
+					
 					
 				
 
