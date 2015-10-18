@@ -16,5 +16,31 @@ public class Ejercicio3 extends KarelMejorada {
 		turnLeft();
 		recogeBeepersUnaColumna();
 		daLaVuelta();
+		avanzaHastaElSuelo();
+		turnLeft();
 	}
+	private void recogeBeepersUnaColumna(){
+		while (beepersPresent()){
+			pickBeeper();
+			move();
+		}
+	}
+	private void avanzaHastaElSuelo(){
+		while(frontIsBlocked()){
+			move();
+		}
+	}
+	private void dejaLosBeepers(){
+		while (beepersInBag()){
+		putBeeper();
+	}
+	}
+	private void retornoAlInicio(){
+		daLaVuelta();
+		while (frontIsClear()){
+			move();
+		}
+		daLaVuelta();
 }
+}
+
