@@ -43,6 +43,6 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 
 		}
 		
-	}
+		}}
 
 }
