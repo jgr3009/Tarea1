@@ -15,6 +15,7 @@ public class Ejercicio3 extends KarelMejorada {
 		}
 	}
 	private void limpiaUnaColumna(){
+		move();
 		turnLeft();
 		recogeBeepersUnaColumna();
 		daLaVuelta();
