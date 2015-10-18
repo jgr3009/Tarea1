@@ -50,6 +50,13 @@ public class CollectNewspaperKarel extends KarelMejorada {
 		putBeeper();
 		giraDerecha();
 	}
+	
+	/*
+	 * Hace que Karel de la vuelta, se mueva y gire a la derecha.
+	 * Este método es privado porque solo valdría para este ejercicio
+	 * o uno similar.
+	 */
+	
 	private void retornaAlInicio(){
 		daLaVuelta();
 		while (frontIsClear()){

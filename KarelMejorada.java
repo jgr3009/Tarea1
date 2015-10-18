@@ -47,8 +47,5 @@ public class KarelMejorada extends Karel{
 		daLaVuelta();
 		move();
 		giraDerecha();
-
 	}
-
-	
 }
