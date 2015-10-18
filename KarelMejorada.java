@@ -57,8 +57,7 @@ public class KarelMejorada extends Karel{
 											
 						if (facingNorth()){
 				move();
-				giraDerecha();
-			}
+							}
 		
 		putBeeper();
 		}
