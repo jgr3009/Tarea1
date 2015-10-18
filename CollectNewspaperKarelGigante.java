@@ -36,6 +36,7 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 				dalaVuelta();
 			if (frontIsClear()){
 				move();
+				giraDerecha();
 			}
 		}
 		
