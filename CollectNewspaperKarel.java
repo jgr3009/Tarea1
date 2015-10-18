@@ -21,12 +21,13 @@ public class CollectNewspaperKarel extends KarelMejorada {
 			while (frontIsClear()){
 			while (frontIsClear()){
 				move();
+				
 			}
 			giraDerecha();
 		}
 
 	}
 	private void moverHastaPared(){
-	
+			
 	}
 }
