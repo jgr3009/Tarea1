@@ -50,5 +50,16 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 		putBeeper();
 		giraDerecha();
 	}
+	/*
+	 * Hace que Karel de la vuelta, se mueva y gire a la derecha.
+	 */
+
+	private void retornaAlInicio(){
+		daLaVuelta();
+		while (frontIsClear()){
+			move();
+		}
+		giraDerecha();
+	}
 }
 

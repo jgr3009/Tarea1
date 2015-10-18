@@ -50,15 +50,5 @@ public class KarelMejorada extends Karel{
 
 	}
 
-	/*
-	 * Hace que Karel de la vuelta, se mueva y gire a la derecha.
-	 */
-
-	public void retornaAlInicio(){
-		daLaVuelta();
-		while (frontIsClear()){
-			move();
-		}
-		giraDerecha();
-	}
+	
 }
