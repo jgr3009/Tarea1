@@ -50,5 +50,12 @@ public class CollectNewspaperKarel extends KarelMejorada {
 		putBeeper();
 		giraDerecha();
 	}
+	private void retornaAlInicio(){
+		daLaVuelta();
+		while (frontIsClear()){
+			move();
+		}
+		giraDerecha();
+	}
 }
 
