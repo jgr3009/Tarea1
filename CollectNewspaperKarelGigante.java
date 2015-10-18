@@ -31,7 +31,7 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 				while (frontIsClear()){
 					move();
 					/*
-					 * Coger el beeper cuando Karel llegue a su altura.		
+					 * Coger el beeper cuando Karel esté sobre él.		
 					 */
 					if (beepersPresent()){
 						pickBeeper();
