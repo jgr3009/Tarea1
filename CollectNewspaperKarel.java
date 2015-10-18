@@ -14,16 +14,20 @@ public class CollectNewspaperKarel extends KarelMejorada {
 
 		// moverHastaPared
 		// girar a la derecha
-		// cuando no haya pared girar a la izquierda
+		// si no hay pared a la izquierda girar a la izquierda
 		// cuando haya un beeper cogerlo y dar la vuelta
 
 	
 		while (frontIsClear()){
 			while (frontIsClear()){
 				move();
-			
+				
+				if (leftIsClear()){
+					giraDerecha();
+				}			
 			}
 			giraDerecha();
+			
 		}
 
 	}
