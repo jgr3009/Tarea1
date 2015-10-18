@@ -21,17 +21,18 @@ public class CollectNewspaperKarel extends KarelMejorada {
 		while (frontIsClear()){
 			while (frontIsClear()){
 				move();				
-				if (leftIsClear()){
-					turnLeft();
-					
-				}
+				
 				if (beepersPresent()){
 					pickBeeper();
 					retornaAlInicio();
 					putBeeper();
 
 				}
-
+				
+				}
+			if (leftIsClear()){
+				turnLeft();
+				
 			}
 			giraDerecha();
 
