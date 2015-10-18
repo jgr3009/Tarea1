@@ -4,6 +4,7 @@ import stanford.karel.*;
 public class Ejercicio3 extends KarelMejorada {
 
 	public void run(){
+	move();
 	}
 	private void recogeTodosLosBeepers(){
 		while (frontIsClear()){
