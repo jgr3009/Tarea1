@@ -35,7 +35,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 			giraDerecha();
 		
 			}	
-		
+		turnLeft();
 		
 	}
 	
