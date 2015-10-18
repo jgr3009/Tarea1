@@ -33,6 +33,7 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 			move();
 			if (beepersPresent()){
 				pickBeeper();
+				dalaVuelta();
 
 		}
 		}
