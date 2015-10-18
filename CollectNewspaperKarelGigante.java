@@ -21,7 +21,9 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 		
 			while (frontIsClear()){
 				move();
-				
+				while (frontIsClear()){
+					move();
+				}
 				
 						if (beepersPresent()){
 							pickBeeper();
