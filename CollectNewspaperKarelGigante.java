@@ -33,9 +33,9 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 						}
 						
 					}
-					putBeeper();
+					
 				}
-
+				putBeeper();
 			}
 
 			giraDerecha();
