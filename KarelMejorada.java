@@ -54,11 +54,11 @@ public class KarelMejorada extends Karel{
 		 while (frontIsClear()){
 		 move();
 		 if (frontIsBlocked()){
-			 turnLeft();
+			 giraDerecha();
 		 }
 		
 		 }
-		turnLeft();
+		dalaVuelta();
 			 
 		}
 }
