@@ -30,7 +30,9 @@ public class CollectNewspaperKarel extends KarelMejorada {
 					putBeeper();
 
 				}
-				
+				if (facingEast()){
+					move();
+				}
 			}
 			giraDerecha();
 
