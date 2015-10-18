@@ -53,7 +53,7 @@ public class KarelMejorada extends Karel{
 		 turnLeft();
 		 while (frontIsClear()){
 		 move();
-		 
+		 putBeeper();
 		
 		 }
 		giraDerecha();
