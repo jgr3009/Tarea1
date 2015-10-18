@@ -31,12 +31,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 						move();		
 					}
 				}
-				if (beepersPresent()){
-					pickBeeper();
-					retornaAlInicio();
-					putBeeper();
 				
-				}
 				
 				}
 			
@@ -44,5 +39,5 @@ public class CollectNewspaperKarel extends KarelMejorada {
 
 		}	
 			}
-
+	}
 }
