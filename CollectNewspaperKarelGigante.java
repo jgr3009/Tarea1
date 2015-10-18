@@ -46,7 +46,6 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 		}
 		/*
 		 * Hacer que Karel deje el beeper y se quede en su posición inicial.
-		 * 
 		 */
 		putBeeper();
 		giraDerecha();
