@@ -30,7 +30,7 @@ public class Ejercicio3 extends KarelMejorada {
 	}
 	private void avanzaHastaElSuelo(){
 		while(frontIsBlocked()){
-			move();
+			daLaVuelta();
 		}
 	}
 	private void dejaLosBeepers(){
