@@ -30,12 +30,13 @@ public class CollectNewspaperKarel extends KarelMejorada {
 					
 					
 				}
-				putBeeper();
+			
 			}
 			giraDerecha();
 		
 			}	
 		giraDerecha();
+		putBeeper();
 	}
 	
 }
