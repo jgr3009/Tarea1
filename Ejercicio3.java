@@ -4,7 +4,9 @@ import stanford.karel.*;
 public class Ejercicio3 extends KarelMejorada {
 
 	public void run(){
-	move();
+		recogeTodosLosBeepers();
+		dejaLosBeepers();
+		retornaAlInicio();
 	}
 	private void recogeTodosLosBeepers(){
 		while (frontIsClear()){
@@ -35,7 +37,7 @@ public class Ejercicio3 extends KarelMejorada {
 		putBeeper();
 	}
 	}
-	private void retornoAlInicio(){
+	private void retornaAlInicio(){
 		daLaVuelta();
 		while (frontIsClear()){
 			move();
