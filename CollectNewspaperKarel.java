@@ -28,10 +28,11 @@ public class CollectNewspaperKarel extends KarelMejorada {
 					pickBeeper();
 					retornaAlInicio();
 					putBeeper();
+					dalaVuelta();
 					
 					
 				}
-			dalaVuelta();
+			
 			}
 			giraDerecha();
 		
