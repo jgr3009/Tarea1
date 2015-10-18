@@ -49,14 +49,17 @@ public class KarelMejorada extends Karel{
 		giraDerecha();
 
 	}
-
-	public void retornaAlInicio(){
-		dalaVuelta();
-		while (frontIsClear()){
-			move();
+	
+		public void retornaAlInicio(){
+			dalaVuelta();
+			while (frontIsClear()){
+				move();
+			}
+			giraDerecha();
 		}
-		giraDerecha();
-		giraDerecha();
-		putBeeper();
-	}
+	
+
+
+
+			
 }
