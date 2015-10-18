@@ -27,9 +27,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 						pickBeeper();
 						retornaAlInicio();
 						putBeeper();
-					while (frontIsClear()){
-						move();		
-					}
+					
 				}
 				
 				
