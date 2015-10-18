@@ -34,7 +34,7 @@ public class CollectNewspaperKarelGigante extends KarelMejorada {
 			if (beepersPresent()){
 				pickBeeper();
 				dalaVuelta();
-			if (frontIsClear()){
+			while (frontIsClear()){
 				move();
 				giraDerecha();
 			}
