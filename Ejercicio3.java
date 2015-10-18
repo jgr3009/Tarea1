@@ -9,9 +9,9 @@ public class Ejercicio3 extends KarelMejorada {
 		retornaAlInicio();
 	}
 	private void recogeTodosLosBeepers(){
-		if (frontIsClear()){
+		while (frontIsClear()){
 			limpiaUnaColumna();
-			move();
+			
 		}
 	}
 	private void limpiaUnaColumna(){
