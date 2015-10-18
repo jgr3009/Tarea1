@@ -30,9 +30,10 @@ public class CollectNewspaperKarel extends KarelMejorada {
 							pickBeeper();
 							
 						}
+						retornaAlInicio();
+						putBeeper();
 					}
-					retornaAlInicio();
-					putBeeper();
+					
 				}
 				
 			}
