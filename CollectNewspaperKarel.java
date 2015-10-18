@@ -24,10 +24,7 @@ public class CollectNewspaperKarel extends KarelMejorada {
 			while (frontIsClear()){
 				
 			}
-				if (frontIsBlocked()){
-					turnLeft();
-			
-			}
+				
 				move();
 		}
 			
