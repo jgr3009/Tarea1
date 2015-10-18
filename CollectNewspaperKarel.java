@@ -22,12 +22,13 @@ public class CollectNewspaperKarel extends KarelMejorada {
 		 * 1º mover a Karel hasta la pared y hacer que siga hacia abajo
 		 */
 			while (frontIsClear()){
-				move();
+				
 			}
 				if (frontIsBlocked()){
 					turnLeft();
 			
 			}
+				move();
 		}
 			
 	}
