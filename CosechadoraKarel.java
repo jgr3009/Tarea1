@@ -48,11 +48,10 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 	private void limpiaUnaFila(){
 		//Karel se mueve por toda la fila y recoge todos los beepers que haya
-		while (frontIsClear()){
-			move();
+		
 			if (beepersPresent()){
 				pickBeeper();
-			}
+			
 		}
 	}
 	private void subeUnaFilaParaIzquierda(){
