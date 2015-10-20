@@ -26,14 +26,11 @@ public class CosechadoraKarel extends KarelMejorada{
 			}
 			if (facingWest()||frontIsBlocked()){
 				limpiaUnaFila();
-				
 				subeUnaFilaParaDerecha();
 			}
 			
 		}
-		if (frontIsBlocked()){
-			daLaVuelta();
-			}
+	turnLeft();
 	}
 	/*private void retornaAlInicio(){
 				if (frontIsBlocked()||facingWest()){
