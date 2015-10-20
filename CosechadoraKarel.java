@@ -39,7 +39,7 @@ public class CosechadoraKarel extends KarelMejorada{
 			daLaVuelta();
 		}
 	*/
-	}
+	
 	private void subeUnaFilaParaDerecha(){
 		turnRight();
 		move();
