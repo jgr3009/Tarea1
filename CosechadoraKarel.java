@@ -33,13 +33,13 @@ public class CosechadoraKarel extends KarelMejorada{
 			
 			
 		}
-	turnLeft();
+	
 	}
-	/*private void retornaAlInicio(){
-				if (frontIsBlocked()||facingWest()){
+	private void retornaAlInicio(){
+				if (frontIsBlocked()&&facingWest()){
 			daLaVuelta();
 		}
-	*/
+	}
 	
 	private void subeUnaFilaParaDerecha(){
 		if (leftIsBlocked()){
