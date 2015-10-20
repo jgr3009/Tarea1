@@ -30,15 +30,15 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 			}
 			if (rightIsBlocked()){
-			retornaAlInicio();
+			daLaVuelta();
 			}
 		}
 	}
-	private void retornaAlInicio(){
+	/*private void retornaAlInicio(){
 				if (frontIsBlocked()||facingWest()){
 			daLaVuelta();
 		}
-		
+	*/
 	}
 	private void subeUnaFilaParaDerecha(){
 		turnRight();
