@@ -42,10 +42,6 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 	
 	private void subeUnaFilaParaDerecha(){
-		if (leftIsBlocked()){
-			daLaVuelta();
-			
-		}
 		turnRight();
 		move();
 		turnRight();
