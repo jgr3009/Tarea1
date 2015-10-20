@@ -18,7 +18,7 @@ public class CosechadoraKarel extends KarelMejorada{
 
 
 		while (frontIsClear()){
-			
+			limpiaUnaFila();
 		
 			while (facingEast()||frontIsBlocked()){
 				
@@ -30,7 +30,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 				
 			}
-			limpiaUnaFila();
+			
 			
 		}
 		
