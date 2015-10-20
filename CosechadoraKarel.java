@@ -17,7 +17,7 @@ public class CosechadoraKarel extends KarelMejorada{
 		//Cuando llegue al final de la fila sube a la de arriba
 
 
-		while (leftIsClear()){
+		while (frontIsClear()){
 			
 			while (facingEast()||frontIsBlocked()){
 				limpiaUnaFila();
@@ -39,6 +39,9 @@ public class CosechadoraKarel extends KarelMejorada{
 	*/
 	
 	private void subeUnaFilaParaDerecha(){
+		if (leftIsBlocked()){
+			daLaVuelta();
+		}
 		turnRight();
 		move();
 		turnRight();
