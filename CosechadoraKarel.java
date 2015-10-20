@@ -33,7 +33,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				daLaVuelta();
 			}
 			}
-		retornaAlInicio();
+		
 	}
 	private void retornaAlInicio(){
 				if (frontIsClear()){
