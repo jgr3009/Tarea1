@@ -36,7 +36,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				if (frontIsClear()){
 			move();
 		}
-		giraDerecha();
+		
 	}
 	private void subeUnaFilaParaDerecha(){
 		turnRight();
