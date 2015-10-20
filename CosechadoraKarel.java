@@ -19,16 +19,13 @@ public class CosechadoraKarel extends KarelMejorada{
 
 		while (frontIsClear()){
 			
-			if (frontIsBlocked()&&rightIsBlocked()){
-				daLaVuelta();
-			}
-			
-			while (facingEast()||frontIsBlocked()){
+		
+			while (facingEast()&&frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaIzquierda();
 
 			}
-			while (facingWest()||frontIsBlocked()){
+			while (facingWest()&&frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaDerecha();
 				
