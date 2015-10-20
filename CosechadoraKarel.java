@@ -28,7 +28,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				limpiaUnaFila();
 				subeUnaFilaParaDerecha();
 			}
-			turnLeft();
+			daLaVuelta();
 		}
 	
 	}
