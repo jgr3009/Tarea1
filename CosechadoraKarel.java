@@ -35,7 +35,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 	private void retornaAlInicio(){
 				if (frontIsBlocked()||facingWest()){
-			move();
+			daLaVuelta();
 		}
 		
 	}
