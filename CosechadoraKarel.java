@@ -38,6 +38,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				move();
 				
 				}
+				}
 		}
 		
 	}
