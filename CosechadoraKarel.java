@@ -66,6 +66,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	 */
 
 	public void run(){
+		turnLeft();
 		limpiaColumnaDeSubida();
 		limpiaColumnaDeBajada();
 
