@@ -111,9 +111,7 @@ public class CosechadoraKarel extends KarelMejorada{
 		}
 		while (frontIsBlocked()){
 			turnLeft();
-			while (frontIsClear()){
-				move();
-			}
+			
 		}
 	}
 }
