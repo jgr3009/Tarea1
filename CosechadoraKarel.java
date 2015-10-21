@@ -8,7 +8,7 @@
 
 public class CosechadoraKarel extends KarelMejorada{
 
-	/*public void run(){
+	public void run(){
 
 		//subir a Karel a la segunda fila
 
@@ -63,9 +63,9 @@ public class CosechadoraKarel extends KarelMejorada{
 
 
 }
-	 */
+	 
 
-	public void run(){
+/*	public void run(){
 		
 	
 		
@@ -74,15 +74,15 @@ public class CosechadoraKarel extends KarelMejorada{
 			limpiaColumnaDeBajada();
 			move();
 		}
-		/*if(frontIsClear()){
+		if(frontIsClear()){
 			if(rightIsBlocked()){
 				turnAround();
-			}*/
-			/*while (frontIsClear()){
+			}
+			while (frontIsClear()){
 				move();
 			}
 			turnLeft();
-			//retornoAlInicio();*/
+			//retornoAlInicio();
 		}
 	
 
@@ -116,11 +116,11 @@ public class CosechadoraKarel extends KarelMejorada{
 		}
 	}
 }
-/*private void retornoAlInicio(){
+private void retornoAlInicio(){
 }	turnAround();
 	while (frontIsClear()){
- */
-
+ 
+*/
 
 
 
