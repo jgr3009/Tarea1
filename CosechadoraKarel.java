@@ -72,6 +72,8 @@ public class CosechadoraKarel extends KarelMejorada{
 
 		
 		while(frontIsClear()){
+			limpiaColumnaDeSubida();
+			limpiaColumnaDeBajada();
 			move();
 		}
 		/*if(frontIsClear()){
