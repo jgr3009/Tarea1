@@ -30,9 +30,9 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 				
 			}
-			
+			retornaAlInicio();
 		}
-		retornaAlInicio();
+		
 	}
 	private void limpiaUnaFila(){
 		//Karel se mueve por toda la fila y recoge todos los beepers que haya
