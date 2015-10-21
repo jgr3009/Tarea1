@@ -1,3 +1,5 @@
+import java.time.DayOfWeek;
+
 
 /*
  * Este ejercicio usa un mapa con beepers
@@ -46,7 +48,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	private void subeUnaFilaParaDerecha(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		if (rightIsBlocked()){
-			turnLeft();
+			daLaVuelta();
 			}
 		turnRight();
 		move();
