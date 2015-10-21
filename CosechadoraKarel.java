@@ -8,7 +8,7 @@
 
 public class CosechadoraKarel extends KarelMejorada{
 
-	public void run(){
+	/*public void run(){
 
 		//subir a Karel a la segunda fila
 
@@ -18,28 +18,28 @@ public class CosechadoraKarel extends KarelMejorada{
 
 
 		while (frontIsClear()){
-			
-		
-			while (facingEast()||frontIsBlocked()){
+
+			if (facingEast()||frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaIzquierda();
+
 			}
-			while (facingWest()||frontIsBlocked()){
+			if (facingWest()||frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaDerecha();
 			}
-			
-			
-		}
-		
+
+			}
+		retornaAlInicio();
 	}
 	private void retornaAlInicio(){
-				if (frontIsBlocked()||facingWest()){
-			daLaVuelta();
+				if (frontIsClear()){
+			move();
 		}
+		giraDerecha();
 	}
-	
 	private void subeUnaFilaParaDerecha(){
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		turnRight();
 		move();
 		turnRight();
@@ -54,8 +54,7 @@ public class CosechadoraKarel extends KarelMejorada{
 		}
 	}
 	private void subeUnaFilaParaIzquierda(){
-		//Karel gira a la izquierda se mueve y gira a la derecha
-		//Se queda mirando hacia el Este
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		turnLeft();
 		move();
 		turnLeft();
@@ -64,3 +63,65 @@ public class CosechadoraKarel extends KarelMejorada{
 
 
 }
+	 */
+
+	public void run(){
+		limpiaColumnaDeSubida();
+		limpiaColumnaDeBajada();
+
+		//turnLeft();
+		while(frontIsClear()){
+			move();
+		}
+		if(frontIsClear()){
+			if(rightIsBlocked()){
+				turnAround();
+			}
+			while (frontIsClear()){
+				move();
+			}
+			turnLeft();
+			//retornoAlInicio();
+		}
+	}
+
+
+	private void limpiaColumnaDeSubida(){
+		turnLeft();
+		while (frontIsClear()){
+			move();
+			if (beepersPresent()){
+				pickBeeper();
+			}
+		}
+		if (frontIsBlocked()){
+			turnRight();
+			move();
+			turnRight();
+		}
+	}
+
+	private void limpiaColumnaDeBajada(){
+		turnLeft();
+		while (frontIsClear()){
+			move();
+			if (beepersPresent()){
+				pickBeeper();
+			}
+		}
+		if (frontIsBlocked()){
+			turnLeft();
+			if (frontIsClear()){
+				move();
+			}
+		}
+	}
+}
+/*private void retornoAlInicio(){
+}	turnAround();
+	while (frontIsClear()){
+ */
+
+
+
+
