@@ -49,8 +49,10 @@ public class CosechadoraKarel extends KarelMejorada{
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		if (rightIsBlocked()){
 			daLaVuelta();
+			while (frontIsClear()){
 			move();
 			}
+		}
 		turnRight();
 		move();
 		turnRight();
