@@ -68,7 +68,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	public void run(){
 		turnLeft();
 		limpiaColumnaDeSubida();
-		/*limpiaColumnaDeBajada();*/
+		limpiaColumnaDeBajada();
 
 		
 		/*while(frontIsClear()){
@@ -102,7 +102,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 
 	private void limpiaColumnaDeBajada(){
-		turnLeft();
+		
 		while (frontIsClear()){
 			move();
 			if (beepersPresent()){
