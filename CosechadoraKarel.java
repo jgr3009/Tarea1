@@ -15,10 +15,10 @@ public class CosechadoraKarel extends KarelMejorada{
 		//limpia todos los beepers de una fila
 
 		//Cuando llegue al final de la fila sube a la de arriba
-
+		retornaAlInicio();
 
 		while (frontIsClear()){
-			retornaAlInicio();
+			
 			if (facingEast()||frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaIzquierda();
