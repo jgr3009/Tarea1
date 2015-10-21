@@ -74,18 +74,17 @@ public class CosechadoraKarel extends KarelMejorada{
 		/*while(frontIsClear()){
 			move();
 		}*/
-		if(frontIsClear()){
+		/*if(frontIsClear()){
 			if(rightIsBlocked()){
 				turnAround();
-			}
+			}*/
 			while (frontIsClear()){
 				move();
 			}
 			turnLeft();
 			//retornoAlInicio();
 		}
-	}
-
+	
 
 	private void limpiaColumnaDeSubida(){
 		
