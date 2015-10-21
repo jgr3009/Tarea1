@@ -59,9 +59,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	private void retornaAlInicio(){
 		//Hace que Karel vuelva al lugar del que partía
 		if (frontIsClear()){
-			move();
-		}
-		giraDerecha();
+			giraDerecha();
 	}
 
 
