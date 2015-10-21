@@ -30,18 +30,13 @@ public class CosechadoraKarel extends KarelMejorada{
 			if (facingWest()||frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaDerecha();
-				if (rightIsBlocked()){
-					turnLeft();
-					while (frontIsClear()){
-					move();
-					
-					}
+				
 			}
 			
 				}
 		}
 		
-	}
+	
 	private void limpiaUnaFila(){
 		//Karel se mueve por toda la fila y recoge todos los beepers que haya
 		while (frontIsClear()){
@@ -53,10 +48,16 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 	private void subeUnaFilaParaDerecha(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		
+		if (rightIsBlocked()){
+			turnLeft();
+			while (frontIsClear()){
+			move();
+			
+			}
 		turnRight();
 		move();
 		turnRight();
+		}
 		
 	}
 	private void subeUnaFilaParaIzquierda(){
