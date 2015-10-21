@@ -87,7 +87,7 @@ public class CosechadoraKarel extends KarelMejorada{
 
 
 	private void limpiaColumnaDeSubida(){
-		turnLeft();
+		
 		while (frontIsClear()){
 			move();
 			if (beepersPresent()){
