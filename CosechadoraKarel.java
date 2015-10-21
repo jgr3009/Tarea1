@@ -32,7 +32,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 				
 			}
-			
+			retornaAlInicio();
 		}
 		
 	}
@@ -47,14 +47,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 	private void subeUnaFilaParaDerecha(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		if (rightIsBlocked()){
-			turnLeft();
-			while (frontIsClear()){
-			move();
-			
-			}
-			
-		}
+		
 		turnRight();
 		move();
 		turnRight();
@@ -67,10 +60,16 @@ public class CosechadoraKarel extends KarelMejorada{
 		turnLeft();
 
 	}
-	/*private void retornaAlInicio(){
-		//Hace que Karel vuelva al lugar del que partía
-		
-	}*/
+	private void retornaAlInicio(){
+		if (rightIsBlocked()){
+			turnLeft();
+			while (frontIsClear()){
+			move();
+			
+			}
+			
+		}
+	}
 	
 	
 }
