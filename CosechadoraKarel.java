@@ -1,7 +1,7 @@
 
 /*
  * Este ejercicio usa un mapa con beepers
- * Karel tiene que recogerlos todos
+ * Karel tiene que recogerlos todos subiendo fila por fila
  * Parte de la esquina inferior izquierda mirando hacia el Este
  * y termina en el mismo sitio
  */
@@ -29,20 +29,8 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 			}
 
-			}
-		retornaAlInicio();
-	}
-	private void retornaAlInicio(){
-				if (frontIsClear()){
-			move();
 		}
-		giraDerecha();
-	}
-	private void subeUnaFilaParaDerecha(){
-		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		turnRight();
-		move();
-		turnRight();
+		retornaAlInicio();
 	}
 	private void limpiaUnaFila(){
 		//Karel se mueve por toda la fila y recoge todos los beepers que haya
@@ -53,6 +41,12 @@ public class CosechadoraKarel extends KarelMejorada{
 			}
 		}
 	}
+	private void subeUnaFilaParaDerecha(){
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
+		turnRight();
+		move();
+		turnRight();
+	}
 	private void subeUnaFilaParaIzquierda(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		turnLeft();
@@ -60,15 +54,23 @@ public class CosechadoraKarel extends KarelMejorada{
 		turnLeft();
 
 	}
+	
+	private void retornaAlInicio(){
+		//Hace que Karel vuelva al lugar del que partía
+		if (frontIsClear()){
+			move();
+		}
+		giraDerecha();
+	}
 
 
 }
-	 
+
 
 /*	public void run(){
-		
-	
-		
+
+
+
 		while(frontIsClear()){
 			limpiaColumnaDeSubida();
 			limpiaColumnaDeBajada();
@@ -84,7 +86,7 @@ public class CosechadoraKarel extends KarelMejorada{
 			turnLeft();
 			//retornoAlInicio();
 		}
-	
+
 
 	private void limpiaColumnaDeSubida(){
 		turnLeft();
@@ -102,7 +104,7 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 
 	private void limpiaColumnaDeBajada(){
-		
+
 		while (frontIsClear()){
 			move();
 			if (beepersPresent()){
@@ -119,8 +121,8 @@ public class CosechadoraKarel extends KarelMejorada{
 private void retornoAlInicio(){
 }	turnAround();
 	while (frontIsClear()){
- 
-*/
+
+ */
 
 
 
