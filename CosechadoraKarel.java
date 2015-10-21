@@ -94,7 +94,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				pickBeeper();
 			}
 		}
-		if (frontIsBlocked()){
+		while (frontIsBlocked()){
 			turnRight();
 			move();
 			turnRight();
