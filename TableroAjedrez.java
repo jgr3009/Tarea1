@@ -18,7 +18,8 @@ public class TableroAjedrez extends KarelMejorada{
 				turnLeft();
 				move();
 				putBeeper();
-			}}
+			}
+			move();}
 			}/*
 			if (frontIsBlocked()&&facingWest()){
 				turnRight();
