@@ -64,7 +64,12 @@ public class CosechadoraKarel extends KarelMejorada{
 			
 			}
 		
-		turnLeft();
+		turnRight();
+		if (frontIsBlocked()&&facingSouth()){
+			putBeeper();
+			
+			
+		}
 		/*if (rightIsBlocked()){
 			turnLeft();
 			while (frontIsClear()){
