@@ -8,7 +8,7 @@ public class MudanzasKarel extends KarelMejorada{
 
 		while (frontIsClear()){
 			
-			if (beepersPresent()){
+			while (beepersPresent()){
 				pickBeeper();
 			}
 			move();
