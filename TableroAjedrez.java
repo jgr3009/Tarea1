@@ -27,7 +27,6 @@ public class TableroAjedrez extends KarelMejorada{
 				while (frontIsClear()&&facingSouth()){
 					move();
 				}
-				turnRight();
 				move();
 				turnRight();
 				move();
