@@ -36,7 +36,7 @@ public class CosechadoraKarel extends KarelMejorada{
 				daLaVuelta();
 				move();
 			}
-			turnLeft();
+			
 				}
 		
 		}
