@@ -66,7 +66,7 @@ public class CosechadoraKarel extends KarelMejorada{
 		
 		turnRight();
 		if (frontIsBlocked()||facingSouth()){
-			turnLeft();
+			daLaVuelta();
 			
 			
 		}
