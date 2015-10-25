@@ -15,6 +15,7 @@ public class TableroAjedrez extends KarelMejorada{
 				move();
 				turnLeft();
 				move();
+				putBeeper();
 			}
 			move();
 			
