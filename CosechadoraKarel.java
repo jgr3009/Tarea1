@@ -53,6 +53,12 @@ public class CosechadoraKarel extends KarelMejorada{
 		if (frontIsBlocked()){
 			daLaVuelta();}
 		move();
+		while (frontIsClear()){
+			move();
+			if (frontIsBlocked()){
+				daLaVuelta();
+			}
+		}
 		turnRight();
 		/*if (rightIsBlocked()){
 			turnLeft();
