@@ -22,9 +22,7 @@ public class TableroAjedrez extends KarelMejorada{
 			}
 			if (frontIsBlocked()&&facingWest()){
 				turnRight();
-				if (frontIsBlocked()){
-					daLaVuelta();
-				}
+				retornaAlInicio();
 				move();
 				turnRight();
 				move();
@@ -40,4 +38,10 @@ public class TableroAjedrez extends KarelMejorada{
 		
 		
 	}	
-	}
+	
+		private void retornaAlInicio(){
+			if (frontIsBlocked()){
+				daLaVuelta();
+			}
+		}
+}
