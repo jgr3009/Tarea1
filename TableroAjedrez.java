@@ -36,7 +36,7 @@ public class TableroAjedrez extends KarelMejorada{
 			//Karel se mueve por toda la fila y recoge todos los beepers que haya
 			while (frontIsClear()){
 				move();
-				pickBeeper();
+				putBeeper();
 				
 			}
 		}
