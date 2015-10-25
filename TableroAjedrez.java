@@ -26,10 +26,11 @@ public class TableroAjedrez extends KarelMejorada{
 				turnRight();
 				move();
 				putBeeper();
+				if (frontIsBlocked()&&rightIsBlocked()){
+					turnLeft();
+				}
 		}
-			if (frontIsBlocked()&&rightIsBlocked()){
-				turnLeft();
-			}
+		
 			move();
 			
 		}
