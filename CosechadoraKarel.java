@@ -17,32 +17,23 @@ public class CosechadoraKarel extends KarelMejorada{
 		//limpia todos los beepers de una fila
 
 		//Cuando llegue al final de la fila sube a la de arriba
-		
+
 
 		while (frontIsClear()||facingSouth()){
-			
+
 			if (facingEast()||frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaIzquierda();
-				
-
 			}
 			if (facingWest()||frontIsBlocked()){
 				limpiaUnaFila();
 				subeUnaFilaParaDerecha();
-				
 			}
-			/*if (frontIsBlocked()&&facingSouth()){
-				putBeeper();
-				
-				
-			}*/
-			
-				}
-		daLaVuelta();
 		}
-		
-	
+		daLaVuelta();
+	}
+
+
 	private void limpiaUnaFila(){
 		//Karel se mueve por toda la fila y recoge todos los beepers que haya
 		while (frontIsClear()){
@@ -54,32 +45,18 @@ public class CosechadoraKarel extends KarelMejorada{
 	}
 	private void subeUnaFilaParaDerecha(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		
+
 		turnRight();
 		if (frontIsBlocked()&&facingNorth()){
 			daLaVuelta();}
 		move();
 		while (frontIsClear()&&facingSouth()){
 			move();
-			
-			}
-		
+		}
 		turnRight();
-		/*if (frontIsBlocked()||facingSouth()){
-			putBeeper();
-			
-			
-		}*/
-		
-		/*if (rightIsBlocked()){
-			turnLeft();
-			while (frontIsClear()){
-			move();
-			
-			}*/	
 	}
-		
-	
+
+
 	private void subeUnaFilaParaIzquierda(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		turnLeft();
@@ -87,77 +64,12 @@ public class CosechadoraKarel extends KarelMejorada{
 		turnLeft();
 
 	}
-	/*private void retornaAlInicio(){
-		if (rightIsBlocked()){
-			turnLeft();
-			while (frontIsClear()){
-			move();
-			
-			}*/
-			
-		}
-	
-	
-	
 
 
-
-/*	public void run(){
-
-
-
-		while(frontIsClear()){
-			limpiaColumnaDeSubida();
-			limpiaColumnaDeBajada();
-			move();
-		}
-		if(frontIsClear()){
-			if(rightIsBlocked()){
-				turnAround();
-			}
-			while (frontIsClear()){
-				move();
-			}
-			turnLeft();
-			//retornoAlInicio();
-		}
-
-
-	private void limpiaColumnaDeSubida(){
-		turnLeft();
-		while (frontIsClear()){
-			move();
-			if (beepersPresent()){
-				pickBeeper();
-			}
-		}
-		while (frontIsBlocked()){
-			turnRight();
-			move();
-			turnRight();
-		}
-	}
-
-	private void limpiaColumnaDeBajada(){
-
-		while (frontIsClear()){
-			move();
-			if (beepersPresent()){
-				pickBeeper();
-			}
-		}
-		while (frontIsBlocked()){
-			turnLeft();
-			move();
-			turnLeft();
-		}
-	}
 }
-private void retornoAlInicio(){
-}	turnAround();
-	while (frontIsClear()){
 
- */
+
+
 
 
 
