@@ -7,11 +7,11 @@ public class TableroAjedrez extends KarelMejorada{
 
 	public void run(){
 
-		while (frontIsClear()){
+		if (frontIsClear()){
 			move();
 			putBeeper();
 			move();
-			while (frontIsBlocked()){
+			if (frontIsBlocked()){
 				turnLeft();
 				move();
 				turnLeft();
