@@ -21,46 +21,7 @@ public class TableroAjedrez extends KarelMejorada{
 			}
 			move();
 			
-			/*if (frontIsBlocked()||facingNorth()){
-				daLaVuelta();}
-			move();
-			while (frontIsClear()&&facingSouth()){
-				move();
-			}*/
 			
 		}
-			}/*
-			if (frontIsBlocked()&&facingWest()){
-				turnRight();
-				if (frontIsBlocked()&&facingNorth()){
-					daLaVuelta();}
-				move();
-				while (frontIsClear()&&facingSouth()){
-					move();
-				}
-				turnRight();
-					}
-				move();
-				turnRight();
-				move();
-				putBeeper();
-					
-				}
-			move();
-			*/
-			
-			
-			
-	
-		private void retornaAlInicio(){
-			if (frontIsBlocked()){
-				daLaVuelta();
-				while (frontIsClear()){
-					move();
-					if (frontIsBlocked()){
-						turnLeft();
-					}
-				}
-			}
-		}
-}
+	}
+	}
