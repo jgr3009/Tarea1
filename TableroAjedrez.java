@@ -24,12 +24,12 @@ public class TableroAjedrez extends KarelMejorada{
 				turnRight();
 				if (frontIsBlocked()){
 					daLaVuelta();
-					while (frontIsClear()){
+					/*while (frontIsClear()){
 						move();
 						//if (frontIsBlocked()){
 							//turnLeft();
 						//}
-					}
+					*/}
 					turnLeft();
 				}
 				move();
