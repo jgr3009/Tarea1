@@ -32,9 +32,9 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 				
 			}
-			if (frontIsBlocked()||facingSouth()){
-				daLaVuelta();
-				move();
+			if (frontIsBlocked()&&facingSouth()){
+				turnLeft();
+				
 				
 			}
 			
