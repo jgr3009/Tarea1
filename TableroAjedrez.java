@@ -21,20 +21,20 @@ public class TableroAjedrez extends KarelMejorada{
 	private void ponerBeeper(){
 		//Karel se mueve por toda la fila y recoge todos los beepers que haya
 		while (frontIsClear()){
-			if (facingEast()&&frontIsBlocked()){
+			if (facingEast()||frontIsBlocked()){
 
 				subeUnaFilaParaIzquierda();
 
 
 			}
-			if (facingWest()&&frontIsBlocked()){
+			if (facingWest()||frontIsBlocked()){
 
 				subeUnaFilaParaDerecha();
 
 			}
 			move();
 			putBeeper();
-			
+			move();
 
 		}
 	}
