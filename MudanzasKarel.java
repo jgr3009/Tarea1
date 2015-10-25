@@ -18,6 +18,9 @@ public class MudanzasKarel extends KarelMejorada{
 			move();
 			if (rightIsClear()){
 				turnRight();
+				if (frontIsBlocked()){
+					turnLeft();
+				}
 			}
 		}
 		
