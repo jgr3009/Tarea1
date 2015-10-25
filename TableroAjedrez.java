@@ -19,6 +19,11 @@ public class TableroAjedrez extends KarelMejorada{
 				move();
 				putBeeper();
 			}
+			move();
+			turnRight();
+			move();
+			putBeeper();
+		}
 			if (frontIsBlocked()&&facingWest()){
 				turnRight();
 				if (frontIsBlocked()&&facingNorth()){
@@ -32,11 +37,7 @@ public class TableroAjedrez extends KarelMejorada{
 					
 				}
 				
-				move();
-				turnRight();
-				move();
-				putBeeper();
-			}
+				
 			
 			move();
 			
