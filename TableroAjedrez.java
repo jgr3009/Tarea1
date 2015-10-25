@@ -3,7 +3,7 @@ import stanford.karel.*;
 
 public class TableroAjedrez extends KarelMejorada{
 
-	public class CosechadoraKarel extends KarelMejorada{
+	
 
 		public void run(){
 
@@ -29,7 +29,7 @@ public class TableroAjedrez extends KarelMejorada{
 				}
 				
 					}
-			}
+			
 			
 		
 		private void ponerBeeper(){
