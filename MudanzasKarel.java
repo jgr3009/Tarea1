@@ -25,7 +25,7 @@ public class MudanzasKarel extends KarelMejorada{
 				
 			}
 		}
-		
+		putBeeper();
 
 	}
 }
