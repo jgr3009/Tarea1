@@ -11,7 +11,7 @@ public class MudanzasKarel extends KarelMejorada{
 			while (beepersPresent()){
 				pickBeeper();
 			}
-			
+			turnLeft();
 		}
 		
 
