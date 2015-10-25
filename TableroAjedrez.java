@@ -63,4 +63,4 @@ public class TableroAjedrez extends KarelMejorada{
 
 		}
 	
-}}
+}
