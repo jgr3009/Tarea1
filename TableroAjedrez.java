@@ -30,12 +30,12 @@ public class TableroAjedrez extends KarelMejorada{
 							//turnLeft();
 						//}
 					*/}
-					turnLeft();
-				}
 				move();
 				turnRight();
 				move();
 				putBeeper();
+					
+				}
 				
 		}
 		
