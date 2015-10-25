@@ -14,6 +14,9 @@ public class MudanzasKarel extends KarelMejorada{
 			
 		}
 		turnLeft();
+		while (frontIsClear()){
+			move();
+		}
 		
 
 	}
