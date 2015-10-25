@@ -32,9 +32,9 @@ public class CosechadoraKarel extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 				
 			}
-			
+			turnLeft();
 				}
-		turnLeft();
+		
 		}
 		
 	
