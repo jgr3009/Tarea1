@@ -22,14 +22,14 @@ public class TableroAjedrez extends KarelMejorada{
 			}
 			if (frontIsBlocked()&&facingWest()){
 				turnRight();
-				if (frontIsBlocked()){
-					daLaVuelta();
-					/*while (frontIsClear()){
-						move();
-						//if (frontIsBlocked()){
-							//turnLeft();
-						//}
-					*/}
+				if (frontIsBlocked()&&facingNorth()){
+					daLaVuelta();}
+				move();
+				while (frontIsClear()&&facingSouth()){
+					move();
+				}
+				turnRight();
+					}
 				move();
 				turnRight();
 				move();
