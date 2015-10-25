@@ -38,10 +38,10 @@ public class TableroAjedrez extends KarelMejorada{
 				putBeeper();
 			}
 			
-			daLaVuelta();
+			move();
 			
 		}
-		
+		daLaVuelta();
 		
 	}
 	
