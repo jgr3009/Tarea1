@@ -39,7 +39,7 @@ public class CosechadoraKarel extends KarelMejorada{
 			}*/
 			
 				}
-		
+		daLaVuelta();
 		}
 		
 	
@@ -70,7 +70,7 @@ public class CosechadoraKarel extends KarelMejorada{
 			
 			
 		}
-		daLaVuelta();
+		
 		/*if (rightIsBlocked()){
 			turnLeft();
 			while (frontIsClear()){
