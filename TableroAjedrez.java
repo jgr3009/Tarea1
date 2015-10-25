@@ -25,13 +25,13 @@ public class TableroAjedrez extends KarelMejorada{
 				putBeeper();
 				move();
 				if (facingEast()||frontIsBlocked()){
-					ponerBeeper();
+					
 					subeUnaFilaParaIzquierda();
 					
 
 				}
 				if (facingWest()||frontIsBlocked()){
-					ponerBeeper();
+					
 					subeUnaFilaParaDerecha();
 					
 				}
