@@ -30,7 +30,7 @@ public class TableroAjedrez extends KarelMejorada{
 							//turnLeft();
 						//}
 					*/}
-				
+				move();
 				if (facingSouth()||frontIsBlocked()){
 					turnLeft();
 				}
@@ -40,6 +40,9 @@ public class TableroAjedrez extends KarelMejorada{
 					
 				}
 			move();
+			if (facingSouth()&&frontIsBlocked()){
+				turnLeft();
+			}
 			
 			}
 		
