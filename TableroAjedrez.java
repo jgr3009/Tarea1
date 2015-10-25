@@ -19,7 +19,16 @@ public class TableroAjedrez extends KarelMejorada{
 				move();
 				putBeeper();
 			}
-			move();}
+			move();
+			turnRight();
+			if (frontIsBlocked()&&facingNorth()){
+				daLaVuelta();}
+			move();
+			while (frontIsClear()&&facingSouth()){
+				move();
+			}
+			turnRight();
+		}
 			}/*
 			if (frontIsBlocked()&&facingWest()){
 				turnRight();
