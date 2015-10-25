@@ -24,8 +24,10 @@ public class MudanzasKarel extends KarelMejorada{
 				turnLeft();
 				
 			}
+			putBeeper();
 		}
-		putBeeper();
+		
 
 	}
+	
 }
