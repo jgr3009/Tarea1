@@ -35,7 +35,7 @@ public class TableroAjedrez extends KarelMejorada{
 				putBeeper();
 			}
 			if (frontIsClear()&&facingSouth()){
-				move();
+				turnLeft();
 			}
 			move();
 		}
