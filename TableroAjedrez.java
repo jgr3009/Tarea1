@@ -1,3 +1,5 @@
+import com.sun.prism.impl.BaseMesh.FaceMembers;
+
 import stanford.karel.*;
 
 
@@ -10,7 +12,7 @@ public class TableroAjedrez extends KarelMejorada{
 		while (frontIsClear()){
 			move();
 			putBeeper();
-			if (frontIsBlocked()){
+			if (frontIsBlocked()||facingEast()){
 				turnLeft();
 				move();
 				turnLeft();
