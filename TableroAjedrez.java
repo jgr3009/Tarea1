@@ -3,61 +3,62 @@ import stanford.karel.*;
 
 public class TableroAjedrez extends KarelMejorada{
 
-	
 
-		public void run(){
 
-			//subir a Karel a la segunda fila
+	public void run(){
 
-			//limpia todos los beepers de una fila
+		//subir a Karel a la segunda fila
 
-			//Cuando llegue al final de la fila sube a la de arriba
-			
+		//limpia todos los beepers de una fila
+
+		//Cuando llegue al final de la fila sube a la de arriba
+
 
 		ponerBeeper();
-		}
-			
-		
-		private void ponerBeeper(){
-			//Karel se mueve por toda la fila y recoge todos los beepers que haya
-			while (frontIsClear()){
-				move();
-				putBeeper();
-				move();
-				if (facingEast()||frontIsBlocked()){
-					
-					subeUnaFilaParaIzquierda();
-					
+	}
 
-				}
-				if (facingWest()||frontIsBlocked()){
-					
-					subeUnaFilaParaDerecha();
-					
-				}
+
+	private void ponerBeeper(){
+		//Karel se mueve por toda la fila y recoge todos los beepers que haya
+		while (frontIsClear()){
+			if (facingEast()||frontIsBlocked()){
+
+				subeUnaFilaParaIzquierda();
+
+
 			}
-		}
-		private void subeUnaFilaParaDerecha(){
-			//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-			
-			turnRight();
+			if (facingWest()||frontIsBlocked()){
+
+				subeUnaFilaParaDerecha();
+
+			}
 			move();
-			turnRight();
-			/*if (rightIsBlocked()){
+			putBeeper();
+			move();
+
+		}
+	}
+	private void subeUnaFilaParaDerecha(){
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
+
+		turnRight();
+		move();
+		turnRight();
+		/*if (rightIsBlocked()){
 				turnLeft();
 				while (frontIsClear()){
 				move();
-				
-				}*/	
-		}
-			
-		
-		private void subeUnaFilaParaIzquierda(){
-			//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-			turnLeft();
-			move();
-			turnLeft();
 
-		}
-	
+				}*/	
+	}
+
+
+	private void subeUnaFilaParaIzquierda(){
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
+		turnLeft();
+		move();
+		turnLeft();
+
+	}
+
 }
