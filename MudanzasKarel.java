@@ -24,14 +24,19 @@ public class MudanzasKarel extends KarelMejorada{
 				turnLeft();
 				for (int i=	0;i	<6;i++)	{
 					putBeeper();
-					move();
-				}	
+				}
+				move();
+
+				for (int i=	0;i	<6;i++)	{
+					putBeeper();
+				}
+				move();	
 			}
-			
-			
-			
+
+
+
 		}
-		
+
 
 
 	}
