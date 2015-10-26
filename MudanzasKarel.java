@@ -36,7 +36,7 @@ public class MudanzasKarel extends KarelMejorada{
 	}
 
 
-}
+
 private void ponerTodosLosBeeper(){
 	for (int i=	0;i	<6;i++)	{
 		putBeeper();
