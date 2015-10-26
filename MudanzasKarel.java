@@ -46,9 +46,10 @@ public class MudanzasKarel extends KarelMejorada{
 				for (int i=	0;i	<16;i++)	{
 					putBeeper();
 				}
-				move();	
+				move();
+				
 			}
-putBeeper();
+
 
 
 		}
