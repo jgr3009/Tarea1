@@ -11,29 +11,24 @@ public class MudanzasKarel extends KarelMejorada{
 			while (beepersPresent()){
 				pickBeeper();
 			}
-
 		}
 		turnLeft();
 		while (frontIsClear()){
 			move();
 			if (rightIsClear()){
 				turnRight();
-
 			}
-			
-				
-				
-			
-
-
-
 		}
+		ponerTodosLosBeeper();
+		
+		
+	}
+	private void ponerTodosLosBeeper(){
 		for (int i=	0;i	<6;i++)	{
 			putBeeper();
 		}
 		turnLeft();
 		move();
-
 		for (int i=	0;i	<3;i++)	{
 			putBeeper();
 		}
@@ -54,8 +49,5 @@ public class MudanzasKarel extends KarelMejorada{
 			putBeeper();
 		}
 		move();
-
-
 	}
-
 }
