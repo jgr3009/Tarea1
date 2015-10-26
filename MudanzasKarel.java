@@ -14,17 +14,7 @@ public class MudanzasKarel extends KarelMejorada{
 
 		}
 		turnLeft();
-		while (frontIsClear()){
-			move();
-			if (rightIsClear()){
-				turnRight();
-
-			}
-			if (frontIsBlocked()){
-				turnLeft();
-
-			}
-			if (frontIsClear()){
+		if (frontIsClear()){
 			for (int i=	0;i	<6;i++)	{
 				putBeeper();
 				move();
@@ -49,7 +39,19 @@ public class MudanzasKarel extends KarelMejorada{
 				putBeeper();
 				move();
 			}
-		}}
+		}
+		while (frontIsClear()){
+			move();
+			if (rightIsClear()){
+				turnRight();
+
+			}
+			if (frontIsBlocked()){
+				turnLeft();
+
+			}
+			
+			}
 
 
 	}
