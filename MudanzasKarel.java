@@ -20,7 +20,12 @@ public class MudanzasKarel extends KarelMejorada{
 			}
 		}
 		ponerTodosLosBeeper();
-		retornaAlInicio();
+		while (frontIsClear()){
+			move();
+			if (frontIsBlocked()){
+				turnLeft();
+			}
+		}
 		if (frontIsBlocked()&&facingSouth()){
 			turnLeft();
 		}
@@ -53,14 +58,14 @@ public class MudanzasKarel extends KarelMejorada{
 		}
 		move();
 	}
-	private void retornaAlInicio(){
-		if (frontIsClear()){
+	/*private void retornaAlInicio(){
+		while (frontIsClear()){
 			move();
 			if (frontIsBlocked()){
 				turnLeft();
 			}
 		}
 		
-	}
+	}*/
 	
 }
