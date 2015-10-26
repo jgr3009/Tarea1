@@ -54,6 +54,7 @@ public class MudanzasKarel extends KarelMejorada{
 	private void retornaAlInicio(){
 		while (frontIsClear()){
 			move();
+			turnLeft();
 		}
 	}
 }
