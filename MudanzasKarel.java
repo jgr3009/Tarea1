@@ -21,8 +21,8 @@ public class MudanzasKarel extends KarelMejorada{
 		}
 		ponerTodosLosBeeper();
 		retornaAlInicio();
-		putBeeper();
-		
+
+
 	}
 	private void ponerTodosLosBeeper(){
 		for (int i=	0;i	<6;i++)	{
@@ -46,7 +46,7 @@ public class MudanzasKarel extends KarelMejorada{
 			putBeeper();
 		}
 		move();	
-		for (int i=	0;i	<16;i++)	{
+		for (int i=	0;i	<16;i++) {
 			putBeeper();
 		}
 		move();
@@ -54,11 +54,12 @@ public class MudanzasKarel extends KarelMejorada{
 	private void retornaAlInicio(){
 		while (frontIsClear()){
 			move();
-		if (frontIsBlocked()){
+			if (frontIsBlocked()){
+				turnLeft();
+			}
+		}
+		if (frontIsBlocked()&&facingSouth()){
 			turnLeft();
 		}
-		}
-		
 	}
-	
 }
