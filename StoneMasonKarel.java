@@ -13,9 +13,15 @@ public class StoneMasonKarel extends KarelMejorada{
 		if (noBeepersPresent()){
 			putBeeper();
 		}
-		daLaVuelta();
-		}
 		
+		}
+		daLaVuelta();
+		while (frontIsClear()){
+			move();
+			if (frontIsBlocked()){
+				turnLeft();
+			}
+		}
 	}
 
 }
