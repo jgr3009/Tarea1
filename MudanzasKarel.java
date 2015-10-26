@@ -22,16 +22,16 @@ public class MudanzasKarel extends KarelMejorada{
 			}
 			if (frontIsBlocked()){
 				turnLeft();
-
+				for (int i=	0;i	<6;i++)	{
+					putBeeper();
+					
+				}	
 			}
 			
 			
 			
 		}
-		for (int i=	0;i	<6;i++)	{
-			putBeeper();
-			
-		}	
+		
 
 
 	}
