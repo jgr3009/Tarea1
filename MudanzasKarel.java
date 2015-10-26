@@ -8,13 +8,13 @@ public class MudanzasKarel extends KarelMejorada{
 
 		while (frontIsClear()){
 			move();
-			if (beepersPresent()){
+			while (beepersPresent()){
 				pickBeeper();
 			}
 
 		}
 		turnLeft();
-		while (frontIsClear()){
+		if (frontIsClear()){
 			move();
 			if (rightIsClear()){
 				turnRight();
