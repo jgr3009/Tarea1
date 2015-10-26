@@ -24,9 +24,10 @@ public class StoneMasonKarel extends KarelMejorada{
 			}
 		
 		}
-		if (beepersPresent()){
-			turnLeft();
-		}
+		
+	
+	if (beepersPresent()){
+		turnLeft();
 	}
-
-}
+	}
+	}
