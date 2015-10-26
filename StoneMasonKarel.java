@@ -20,6 +20,7 @@ public class StoneMasonKarel extends KarelMejorada{
 			move();
 			if (frontIsBlocked()){
 				turnLeft();
+				move();
 				if (beepersPresent()){
 					turnLeft();
 				}
