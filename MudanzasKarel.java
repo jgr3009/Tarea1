@@ -21,7 +21,9 @@ public class MudanzasKarel extends KarelMejorada{
 		}
 		ponerTodosLosBeeper();
 		retornaAlInicio();
-
+		if (frontIsBlocked()&&facingSouth()){
+			turnLeft();
+		}
 
 	}
 	private void ponerTodosLosBeeper(){
@@ -58,8 +60,7 @@ public class MudanzasKarel extends KarelMejorada{
 				turnLeft();
 			}
 		}
-		if (frontIsBlocked()&&facingSouth()){
-			turnLeft();
-		}
+		
 	}
+	
 }
