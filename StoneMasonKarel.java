@@ -15,6 +15,7 @@ public class StoneMasonKarel extends KarelMejorada{
 		}
 		
 		}
+		daLaVuelta();
 	}
 
 }
