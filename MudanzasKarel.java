@@ -54,7 +54,7 @@ public class MudanzasKarel extends KarelMejorada{
 		move();
 	}
 	private void retornaAlInicio(){
-		while (frontIsClear()){
+		if (frontIsClear()){
 			move();
 			if (frontIsBlocked()){
 				turnLeft();
