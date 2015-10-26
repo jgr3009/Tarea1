@@ -21,7 +21,7 @@ public class MudanzasKarel extends KarelMejorada{
 		}
 		ponerTodosLosBeeper();
 		retornaAlInicio();
-		
+		putBeeper();
 		
 	}
 	private void ponerTodosLosBeeper(){
@@ -58,6 +58,7 @@ public class MudanzasKarel extends KarelMejorada{
 			turnLeft();
 		}
 		}
-		putBeeper();
+		
 	}
+	
 }
