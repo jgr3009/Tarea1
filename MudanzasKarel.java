@@ -25,17 +25,13 @@ public class MudanzasKarel extends KarelMejorada{
 
 			}
 			
-			for (int i=	0;i	<6;i++)	{
-				putBeeper();
-				
-			}
-			for (int i=	0;i	<3;i++)	{
-				putBeeper();
-				
-			}
+			
 			
 		}
+		for (int i=	0;i	<6;i++)	{
+			putBeeper();
 			
+		}	
 
 
 	}
