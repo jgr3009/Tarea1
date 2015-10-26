@@ -6,9 +6,9 @@ public class MudanzasKarel extends KarelMejorada{
 
 	public void run(){
 
-		if (frontIsClear()){
+		while (frontIsClear()){
 			move();
-			while (beepersPresent()){
+			if (beepersPresent()){
 				pickBeeper();
 			}
 
