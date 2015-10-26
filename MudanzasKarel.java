@@ -13,68 +13,65 @@ public class MudanzasKarel extends KarelMejorada{
 			}
 		}
 		turnLeft();
-		
+
 		while (frontIsClear()){
 			move();
-			
+
 			if (rightIsClear()){
 				turnRight();
 			}
-			
+
 		}
 		ponerTodosLosBeeper();
-		for (int i=	0;i	<3;i++)	{
-		
-		
-		if (frontIsClear()){
+
+		while (frontIsClear()){
 			move();
 			if (frontIsBlocked()){
 				turnLeft();
 			}		
-			
-			
-			}
-			
-			
+
 		}
-		
+
 
 	}
-	private void ponerTodosLosBeeper(){
-		for (int i=	0;i	<6;i++)	{
-			putBeeper();
-		}
-		turnLeft();
-		move();
-		for (int i=	0;i	<3;i++)	{
-			putBeeper();
-		}
-		move();
-		for (int i=	0;i	<2;i++)	{
-			putBeeper();
-		}
-		move();	
-		for (int i=	0;i	<8;i++)	{
-			putBeeper();
-		}
-		move();	
-		for (int i=	0;i	<1;i++)	{
-			putBeeper();
-		}
-		move();	
-		for (int i=	0;i	<16;i++) {
-			putBeeper();
-		}
-		move();
+
+
+}
+private void ponerTodosLosBeeper(){
+	for (int i=	0;i	<6;i++)	{
+		putBeeper();
 	}
-	/*private void retornaAlInicio(){
+	turnLeft();
+	move();
+	for (int i=	0;i	<3;i++)	{
+		putBeeper();
+	}
+	move();
+	for (int i=	0;i	<2;i++)	{
+		putBeeper();
+	}
+	move();	
+	for (int i=	0;i	<8;i++)	{
+		putBeeper();
+	}
+	move();	
+	for (int i=	0;i	<1;i++)	{
+		putBeeper();
+	}
+	move();	
+	for (int i=	0;i	<16;i++) {
+		putBeeper();
+	}
+	move();
+}
+/*private void retornaAlInicio(){
 		while (frontIsClear()){
 			move();
 			if (frontIsBlocked()){
 				turnLeft();
 			}
 		}
-		
+
 	}*/
-	
+
 }
