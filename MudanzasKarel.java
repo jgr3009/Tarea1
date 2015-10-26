@@ -20,6 +20,7 @@ public class MudanzasKarel extends KarelMejorada{
 			}
 		}
 		ponerTodosLosBeeper();
+		retornaAlInicio();
 		
 		
 	}
@@ -49,5 +50,10 @@ public class MudanzasKarel extends KarelMejorada{
 			putBeeper();
 		}
 		move();
+	}
+	private void retornaAlInicio(){
+		while (frontIsClear()){
+			move();
+		}
 	}
 }
