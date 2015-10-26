@@ -21,7 +21,7 @@ public class MudanzasKarel extends KarelMejorada{
 
 			}
 			
-				
+			turnLeft();	
 				
 			
 
