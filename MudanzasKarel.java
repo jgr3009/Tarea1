@@ -1,6 +1,6 @@
 import stanford.karel.*;
 
-public class MudanzasKarel extends KarelMejorada{
+public class MudanzasKarel extends SuperKarel{
 
 
 
@@ -12,8 +12,8 @@ public class MudanzasKarel extends KarelMejorada{
 				pickBeeper();
 			}
 		}
-		
-		
+		turnLeft();
+		stop();
 		while (frontIsClear()){
 			move();
 			
