@@ -27,10 +27,7 @@ public class MudanzasKarel extends KarelMejorada{
 				putBeeper();
 				
 			}
-			if (frontIsBlocked()){
-				turnLeft();
-				
-			}
+			
 			
 		}
 		putBeeper();
