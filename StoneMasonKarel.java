@@ -22,9 +22,10 @@ public class StoneMasonKarel extends KarelMejorada{
 				turnLeft();
 				
 			}
-			if (beepersPresent()){
-				turnLeft();
-			}
+		
+		}
+		if (beepersPresent()){
+			turnLeft();
 		}
 	}
 
