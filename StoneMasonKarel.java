@@ -10,7 +10,7 @@ public class StoneMasonKarel extends KarelMejorada{
 		while (frontIsClear()){
 			move();
 		if (noBeepersPresent()){
-			pickBeeper();
+			putBeeper();
 		}
 		
 		}
