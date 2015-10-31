@@ -36,7 +36,7 @@ public class SaltaAgujas extends KarelMejorada{
 				turnLeft();
 			}
 		}*/
-		turnLeft();
+		
 
 	}
 	private void saltaLasAgujas(){
@@ -65,5 +65,6 @@ public class SaltaAgujas extends KarelMejorada{
 				turnLeft();
 			}
 		}
+		turnLeft();
 	}
 	}
