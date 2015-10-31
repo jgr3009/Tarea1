@@ -35,9 +35,9 @@ public class SaltaAgujas extends KarelMejorada{
 			if (frontIsBlocked()&&facingNorth()){
 				turnLeft();
 			}
-		}*/
-		
-
+		}*/{
+		turnLeft();
+		}
 	}
 	private void saltaLasAgujas(){
 		while (frontIsBlocked()){
@@ -51,7 +51,7 @@ public class SaltaAgujas extends KarelMejorada{
 				}
 			}
 		}
-		turnLeft();
+		
 	}
 	
 	private void subeUltimaColumna(){
