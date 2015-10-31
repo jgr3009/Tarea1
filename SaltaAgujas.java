@@ -63,9 +63,9 @@ public class SaltaAgujas extends KarelMejorada{
 	private void llegaAlFinal(){
 		while (frontIsClear()){
 			move();
-			if (frontIsBlocked()&&facingNorth()){
+			/*if (frontIsBlocked()&&facingNorth()){
 				turnLeft();
-			}
+			}*/
 		}
 		
 	}
