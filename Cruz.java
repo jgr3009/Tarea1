@@ -16,7 +16,7 @@ public class Cruz extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 			}
 		}
-		turnLeft();
+		turnRight();
 	}
 
 
