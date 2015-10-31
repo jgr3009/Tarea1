@@ -25,12 +25,12 @@ public class SaltaAgujas extends KarelMejorada{
 				}
 			}
 			}*/
-			subeUltimaColumna();
+			//subeUltimaColumna();
 			/*if (frontIsBlocked()&&facingNorth()){
 				daLaVuelta();
 			}*/
 		
-		llegaAlFinal();
+		//llegaAlFinal();
 		/*while (frontIsClear()){
 			move();
 			if (frontIsBlocked()&&facingNorth()){
