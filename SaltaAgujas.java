@@ -23,6 +23,7 @@ public class SaltaAgujas extends KarelMejorada{
 					move();
 					turnRight();
 				}
+			}
 			}*/
 			subeUltimaColumna();
 			/*if (frontIsBlocked()&&facingNorth()){
