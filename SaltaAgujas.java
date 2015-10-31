@@ -51,6 +51,7 @@ public class SaltaAgujas extends KarelMejorada{
 				}
 			}
 		}
+		turnLeft();
 	}
 	
 	private void subeUltimaColumna(){
@@ -65,6 +66,6 @@ public class SaltaAgujas extends KarelMejorada{
 				turnLeft();
 			}
 		}
-		turnLeft();
+		
 	}
 	}
