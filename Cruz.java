@@ -16,7 +16,7 @@ public class Cruz extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 			}
 		}
-		turnRight();
+		daLaVuelta();
 	}
 
 
@@ -27,6 +27,8 @@ public class Cruz extends KarelMejorada{
 			if (beepersPresent()){
 				pickBeeper();
 			}
+			daLaVuelta();
+			putBeeper();
 		}
 	}
 	private void subeUnaFilaParaDerecha(){
