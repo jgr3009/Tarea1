@@ -27,9 +27,10 @@ public class Cruz extends KarelMejorada{
 			if (beepersPresent()){
 				pickBeeper();
 			}
-			daLaVuelta();
-			putBeeper();
+			
 		}
+		daLaVuelta();
+		putBeeper();
 	}
 	private void subeUnaFilaParaDerecha(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
