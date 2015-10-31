@@ -30,7 +30,7 @@ public class SaltaAgujas extends KarelMejorada{
 				daLaVuelta();
 			}*/
 		
-		//llegaAlFinal();
+		llegaAlFinal();
 		/*while (frontIsClear()){
 			move();
 			if (frontIsBlocked()&&facingNorth()){
@@ -51,6 +51,9 @@ public class SaltaAgujas extends KarelMejorada{
 					turnRight();
 				}
 			}
+		}
+		if (frontIsBlocked()&&facingNorth()){
+			daLaVuelta();
 		}
 		
 	}
