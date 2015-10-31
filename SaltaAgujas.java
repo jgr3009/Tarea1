@@ -51,10 +51,11 @@ public class SaltaAgujas extends KarelMejorada{
 					turnRight();
 				}
 			}
+			if (frontIsBlocked()&&facingNorth()){
+				daLaVuelta();
+			}
 		}
-		if (frontIsBlocked()&&facingNorth()){
-			daLaVuelta();
-		}
+		
 		
 	}
 	
