@@ -44,6 +44,7 @@ public class Cruz extends KarelMejorada{
 						move();
 						putBeeper();
 					}
+					move();
 				}
 			}
 			
