@@ -16,12 +16,12 @@ public class Cruz extends KarelMejorada{
 				subeUnaFilaParaDerecha();
 			}
 		}
-		daLaVuelta();
+		
 	}
 
 
 	private void encuentraBeeper(){
-		//Karel se mueve por toda la fila y recoge todos los beepers que haya
+		
 		while (frontIsClear()){
 			move();
 			if (beepersPresent()){
@@ -44,7 +44,7 @@ public class Cruz extends KarelMejorada{
 						move();
 						putBeeper();
 					}
-					move();
+					
 				}
 			}
 			
