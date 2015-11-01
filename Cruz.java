@@ -32,11 +32,11 @@ public class Cruz extends KarelMejorada{
 					putBeeper();
 				}
 			}
-			
+			if (frontIsBlocked()){
+				daLaVuelta();
+			}
 		}
-		if (frontIsBlocked()){
-			daLaVuelta();
-		}
+		
 
 	}
 	private void subeUnaFilaParaDerecha(){
