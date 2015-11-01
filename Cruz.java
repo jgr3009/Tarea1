@@ -34,6 +34,9 @@ public class Cruz extends KarelMejorada{
 			}
 			
 		}
+		if (frontIsBlocked()){
+			daLaVuelta();
+		}
 
 	}
 	private void subeUnaFilaParaDerecha(){
