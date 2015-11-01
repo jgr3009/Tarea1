@@ -38,6 +38,7 @@ public class Cruz extends KarelMejorada{
 					}
 					if (noBeepersPresent()){
 						putBeeper();
+						turnLeft();
 					}
 				}
 			}
