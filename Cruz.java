@@ -31,10 +31,11 @@ public class Cruz extends KarelMejorada{
 					move();
 					putBeeper();
 				}
+				if (frontIsBlocked()){
+					daLaVuelta();
+				}
 			}
-			if (frontIsBlocked()){
-				daLaVuelta();
-			}
+			
 		}
 		
 
