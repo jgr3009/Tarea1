@@ -33,6 +33,9 @@ public class Cruz extends KarelMejorada{
 				}
 				if (frontIsBlocked()){
 					daLaVuelta();
+					while (beepersPresent()){
+						move();
+					}
 				}
 			}
 			
