@@ -57,7 +57,7 @@ public class Cruz extends KarelMejorada{
 
 		turnRight();
 		move();
-		if (frontIsBlocked()&&facingSouth()){
+		while (frontIsBlocked()&&facingSouth()){
 			move();
 		}
 		turnRight();
