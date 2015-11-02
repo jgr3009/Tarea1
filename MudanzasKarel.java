@@ -16,15 +16,16 @@ public class MudanzasKarel extends KarelMejorada{
 		}
 		turnLeft();
 		*/
-
-		while (frontIsClear()){
+		saltaAguja();
+		
+		/*while (frontIsClear()){
 			move();
 
 			if (rightIsClear()){
 				turnRight();
 			}
 		}
-		
+		*/
 		ponerTodosLosBeeper();
 		
 		while (frontIsClear()){
@@ -35,6 +36,15 @@ public class MudanzasKarel extends KarelMejorada{
 		
 		}
 		turnLeft();
+	}
+	private void saltaAguja(){
+		while (frontIsClear()){
+			move();
+
+			if (rightIsClear()){
+				turnRight();
+			}
+		}
 	}
 	
 	private void cogeLosBeeper(){
