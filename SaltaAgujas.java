@@ -32,15 +32,17 @@ public class SaltaAgujas extends KarelMejorada{
 					turnRight();
 				}
 			}
-			if (frontIsBlocked()&&facingNorth()){
+			/*if (frontIsBlocked()&&facingNorth()){
 				daLaVuelta();
-			}
+			}*/
 		}
 	}
 
 	//Este método hace que Karel baje la última columna y se quede mirando al este.
 	private void llegaAlFinal(){
-
+		if (frontIsBlocked()&&facingNorth()){
+			daLaVuelta();
+		}
 		while (frontIsClear()){
 			move();
 		}
