@@ -14,10 +14,10 @@ public class Cruz extends KarelMejorada{
 		
 		//if (facingWest()||frontIsBlocked()){
 			//encuentraBeeper();
-			
+			subeUnaFilaParaIzquierda();
+			subeUnaFilaParaDerecha();
 	}
-		subeUnaFilaParaIzquierda();
-		subeUnaFilaParaDerecha();
+		
 		
 	}
 
