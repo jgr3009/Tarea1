@@ -4,7 +4,7 @@ import stanford.karel.*;
 public class Cruz extends KarelMejorada{
 
 	public void run(){
-		while (frontIsClear()||facingSouth()){
+		while (frontIsClear()){
 			move();
 		//while (frontIsClear()||facingSouth()){
 
@@ -14,9 +14,10 @@ public class Cruz extends KarelMejorada{
 		
 		//if (facingWest()||frontIsBlocked()){
 			//encuentraBeeper();
-			subeUnaFilaParaDerecha();
-			subeUnaFilaParaIzquierda();
+			
 	}
+		subeUnaFilaParaDerecha();
+		subeUnaFilaParaIzquierda();
 	}
 
 
