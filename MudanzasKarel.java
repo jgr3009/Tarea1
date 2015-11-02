@@ -51,7 +51,8 @@ public class MudanzasKarel extends KarelMejorada{
 		turnLeft();
 	}
 
-
+	//Con este método Karel pone todos los beepers que lleva en la bolsa
+	//en el siguiente orden (6,3,2,8,1,16).
 	private void ponerTodosLosBeeper(){
 		for (int i=	0;i	<6;i++)	{
 			putBeeper();
@@ -77,9 +78,11 @@ public class MudanzasKarel extends KarelMejorada{
 		for (int i=	0;i	<16;i++) {
 			putBeeper();
 		}
-		move();
+		//move();
 	}
 
+	//Con este método Karel vuelve al inicio bordeando el mundo
+	//hasta que llega a la esquina inferior izquierda y se queda mirando al este.
 	private void vueltaAlInicio(){
 		while (frontIsClear()){
 			move();
