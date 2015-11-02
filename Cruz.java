@@ -4,31 +4,19 @@ import stanford.karel.*;
 public class Cruz extends KarelMejorada{
 
 	public void run(){
+
 		while (frontIsClear()){
 			move();
 
-			//subeUnaFilaParaIzquierda();
-			//subeUnaFilaParaDerecha();
-			encuentra();
+			encuentraBeeper();
 			dibujaCruz();
 		}
 		vuelveAlInicio();
 	}
 
 
-	private void vuelveAlInicio(){
 
-		if (frontIsBlocked()){
-			turnRight();
-			while (frontIsClear()){
-				move();
-			}
-			daLaVuelta();
-		}
-	}
-
-
-	private void encuentra(){
+	private void encuentraBeeper(){
 		if (facingWest()&&frontIsBlocked()){
 			turnRight();
 			move();
@@ -40,27 +28,8 @@ public class Cruz extends KarelMejorada{
 			turnLeft();
 		}
 	}
-	private void subeUnaFilaParaDerecha(){
-		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-
-		if (facingWest()&&frontIsBlocked()){
-			turnRight();
-			move();
-			turnRight();
-		}
-	}
 
 
-
-	private void subeUnaFilaParaIzquierda(){
-		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-
-		if (facingEast()&&frontIsBlocked()){
-			turnLeft();
-			move();
-			turnLeft();
-		}
-	}
 	private void dibujaCruz(){
 
 		if (beepersPresent()){
@@ -84,6 +53,17 @@ public class Cruz extends KarelMejorada{
 					putBeeper();
 				}
 			}
+		}
+	}
+
+	private void vuelveAlInicio(){
+
+		if (frontIsBlocked()){
+			turnRight();
+			while (frontIsClear()){
+				move();
+			}
+			daLaVuelta();
 		}
 	}
 }
