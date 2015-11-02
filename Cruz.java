@@ -5,7 +5,7 @@ public class Cruz extends KarelMejorada{
 
 	public void run(){
 
-		while (frontIsClear()||facingSouth()){
+		//while (frontIsClear()||facingSouth()){
 
 			//if (facingEast()||frontIsBlocked()){
 			//encuentraBeeper();
@@ -14,7 +14,7 @@ public class Cruz extends KarelMejorada{
 		//if (facingWest()||frontIsBlocked()){
 			//encuentraBeeper();
 			subeUnaFilaParaDerecha();
-		}
+		
 	}
 
 
