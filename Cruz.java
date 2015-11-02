@@ -11,18 +11,40 @@ public class Cruz extends KarelMejorada{
 			//if (facingEast()||frontIsBlocked()){
 			//encuentraBeeper();
 			
-		
+		if (frontIsBlocked()){
 		//if (facingWest()||frontIsBlocked()){
 			//encuentraBeeper();
 			subeUnaFilaParaIzquierda();
 			subeUnaFilaParaDerecha();
-	}
+	}}
 		
 		
 	}
 
+	private void subeUnaFilaParaDerecha(){
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
+		while (frontIsClear()){
+			move();
+		if (facingWest()&&frontIsBlocked()){
+			turnRight();
+			move();
+			turnRight();
+		}
+		}
+	}
 
 
+	private void subeUnaFilaParaIzquierda(){
+		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
+		while (frontIsClear()){
+			move();
+		if (facingEast()&&frontIsBlocked()){
+			turnLeft();
+			move();
+			turnLeft();
+		}
+	}
+	}
 	private void encuentraBeeper(){
 
 		while (frontIsClear()){
@@ -57,30 +79,6 @@ public class Cruz extends KarelMejorada{
 		}
 
 
-	}
-	private void subeUnaFilaParaDerecha(){
-		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		while (frontIsClear()){
-			move();
-		if (facingWest()&&frontIsBlocked()){
-			turnRight();
-			move();
-			turnRight();
-		}
-		}
-	}
-
-
-	private void subeUnaFilaParaIzquierda(){
-		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		while (frontIsClear()){
-			move();
-		if (facingEast()&&frontIsBlocked()){
-			turnLeft();
-			move();
-			turnLeft();
-		}
-	}
 	}
 
 
