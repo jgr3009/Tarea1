@@ -9,6 +9,7 @@ public class Cruz extends KarelMejorada{
 
 			//subeUnaFilaParaIzquierda();
 			//subeUnaFilaParaDerecha();
+			encuentra();
 			encuentraBeeper();
 		}
 		vuelveAlInicio();
