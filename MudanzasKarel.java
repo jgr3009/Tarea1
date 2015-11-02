@@ -35,9 +35,10 @@ public class MudanzasKarel extends KarelMejorada{
 				pickBeeper();
 			}
 		}
-		
 	}
 
+	//Con este método Karel salta la aguja, es decir, sube por el lado
+	//izquierdo y cuando llega al final de la aguja la baja por el lado derecho.
 	private void saltaAguja(){
 		turnLeft();
 		while (frontIsClear()){
@@ -55,7 +56,7 @@ public class MudanzasKarel extends KarelMejorada{
 		for (int i=	0;i	<6;i++)	{
 			putBeeper();
 		}
-		
+
 		move();
 		for (int i=	0;i	<3;i++)	{
 			putBeeper();
