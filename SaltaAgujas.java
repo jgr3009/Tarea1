@@ -19,7 +19,8 @@ public class SaltaAgujas extends KarelMejorada{
 		llegaAlFinal();
 	}
 
-	//Este método hace que Karel salte las agujas, de una en una, sin soltar la aguja que está saltando.
+	//Este método hace que Karel salte las agujas, de una en una, sin soltar la aguja que está saltando
+	//Y llega hasta la esquina superior derecha y da la vuelta.
 	private void saltaLasAgujas(){
 
 		while (frontIsBlocked()){
@@ -32,17 +33,16 @@ public class SaltaAgujas extends KarelMejorada{
 					turnRight();
 				}
 			}
-			/*if (frontIsBlocked()&&facingNorth()){
+			if (frontIsBlocked()&&facingNorth()){
 				daLaVuelta();
-			}*/
+			}
 		}
 	}
 
-	//Este método hace que Karel baje la última columna y se quede mirando al este.
+	//Este método hace que Karel baje la última columna 
+	//y se quede en la esquina inferior derecha y mirando al este.
 	private void llegaAlFinal(){
-		if (frontIsBlocked()&&facingNorth()){
-			daLaVuelta();
-		}
+
 		while (frontIsClear()){
 			move();
 		}
