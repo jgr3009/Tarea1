@@ -81,7 +81,7 @@ public class MudanzasKarel extends KarelMejorada{
 		}
 	}
 
-	//Con este método Karel vuelve al inicio bordeando el mundo
+	//Con este método Karel vuelve al inicio bordeando el mundo por el este, norte y oeste
 	//hasta que llega a la esquina inferior izquierda y se queda mirando al este.
 	private void vueltaAlInicio(){
 		while (frontIsClear()){
