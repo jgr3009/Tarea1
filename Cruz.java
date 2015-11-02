@@ -22,8 +22,9 @@ public class Cruz extends KarelMejorada{
 			turnRight();
 			while (frontIsClear()){
 			move();
-			daLaVuelta();
+			
 			}
+			daLaVuelta();
 			}
 	}
 
