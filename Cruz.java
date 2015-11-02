@@ -60,7 +60,7 @@ public class Cruz extends KarelMejorada{
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		while (frontIsClear()){
 			move();
-		if (facingWest()&&frontIsBlocked()){
+		while (facingWest()&&frontIsBlocked()){
 			turnRight();
 			move();
 			turnRight();
@@ -73,7 +73,7 @@ public class Cruz extends KarelMejorada{
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
 		while (frontIsClear()){
 			move();
-		if (facingEast()&&frontIsBlocked()){
+		while (facingEast()&&frontIsBlocked()){
 			turnLeft();
 			move();
 			turnLeft();
