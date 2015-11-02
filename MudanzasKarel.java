@@ -2,7 +2,11 @@
 /*
  * Autor: JORGE GARCÍA ROJO
  * 
- * En este ejercicio
+ * Este ejercicio Karel empieza en la esquina inferior izquierda y mirando al este, y
+ *  consiste en que Karel coja todos los beepers del lado 
+ * izquierdo de la aguja en el siguiente orden (6,3,0,2,8,1,16), pase hacia 
+ * el otro lado de la aguja y vaya dejando los beepers en el siguiente orden (6,3,2,8,1,16). 
+ * Y cuando deje el último beeper vuelva a su posición inicial (esquina inferior izquierda y mirando al este).
  */
 
 
@@ -22,7 +26,8 @@ public class MudanzasKarel extends KarelMejorada{
 	}
 
 
-
+	//Con este método Karel recoge todos los beepers que hay 
+	//en el lado izquierdo de la aguja en el siguiente orden (6,3,0,2,8,1,16).
 	private void cogeLosBeeper(){
 		while (frontIsClear()){
 			move();
@@ -30,10 +35,11 @@ public class MudanzasKarel extends KarelMejorada{
 				pickBeeper();
 			}
 		}
-		turnLeft();
+		
 	}
 
 	private void saltaAguja(){
+		turnLeft();
 		while (frontIsClear()){
 			move();
 
