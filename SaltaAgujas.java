@@ -14,13 +14,14 @@ import stanford.karel.*;
 public class SaltaAgujas extends KarelMejorada{
 
 	public void run(){
+
 		saltaLasAgujas();
 		llegaAlFinal();
 	}
 
 	//Este método hace que Karel salte las agujas, de una en una, sin soltar la aguja que está saltando.
-	//Y que cuando llegue al final suba y baje la última columna.
 	private void saltaLasAgujas(){
+
 		while (frontIsBlocked()){
 			turnLeft();
 			while (frontIsClear()){
@@ -35,15 +36,14 @@ public class SaltaAgujas extends KarelMejorada{
 				daLaVuelta();
 			}
 		}
-
 	}
 
 	//Este método hace que Karel baje la última columna y se quede mirando al este.
 	private void llegaAlFinal(){
+
 		while (frontIsClear()){
 			move();
 		}
 		turnLeft();
-
 	}
 }
