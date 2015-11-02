@@ -2,7 +2,7 @@
 /*
  * Autor: JORGE GARCÍA ROJO
  * 
- * En este ejercicio Karel empieza en la esquina inferior izquierda y mirando al este, y
+ * En este ejercicio Karel está en un mundo de empieza en la esquina inferior izquierda y mirando al este, y
  * consiste en que Karel coja todos los beepers del lado 
  * izquierdo de la aguja en el siguiente orden (6,3,0,2,8,1,16), pase hacia 
  * el otro lado de la aguja y vaya dejando los beepers en el siguiente orden (6,3,2,8,1,16). 
