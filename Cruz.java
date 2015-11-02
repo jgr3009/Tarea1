@@ -10,10 +10,12 @@ public class Cruz extends KarelMejorada{
 			subeUnaFilaParaIzquierda();
 			subeUnaFilaParaDerecha();
 			encuentraBeeper();
-			
+			vuelveAlInicio();
 	
 		}
-		vuelveAlInicio();
+		if (frontIsBlocked()){
+			daLaVuelta();
+		}
 		
 	}
 	private void vuelveAlInicio(){
