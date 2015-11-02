@@ -70,13 +70,15 @@ public class Cruz extends KarelMejorada{
 
 	private void subeUnaFilaParaIzquierda(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
+		while (frontIsClear()){
+			move();
 		if (facingEast()||frontIsBlocked()){
 			turnLeft();
 			move();
 			turnLeft();
 		}
 	}
-
+	}
 
 
 
