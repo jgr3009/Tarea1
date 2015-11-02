@@ -1,3 +1,12 @@
+
+/*
+ * Autor: JORGE GARCÍA ROJO
+ * 
+ * En este ejercicio
+ */
+
+
+
 import stanford.karel.*;
 
 public class MudanzasKarel extends KarelMejorada{
