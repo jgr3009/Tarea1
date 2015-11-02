@@ -78,7 +78,6 @@ public class MudanzasKarel extends KarelMejorada{
 		for (int i=	0;i	<16;i++) {
 			putBeeper();
 		}
-		//move();
 	}
 
 	//Con este método Karel vuelve al inicio bordeando el mundo
@@ -89,9 +88,7 @@ public class MudanzasKarel extends KarelMejorada{
 			if (frontIsBlocked()&&notFacingSouth()){
 				turnLeft();
 			}
-
 		}
 		turnLeft();
 	}
-
 }
