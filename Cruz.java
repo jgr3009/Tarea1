@@ -4,9 +4,9 @@
  * 
  * En este ejercicio Karel empieza en la esquina inferior izquierda, mirando al este, con infinitos beepers
  * y en un mundo de 10x10, y con un beeper en el 4x6. Karel tiene que buscar el beeper 
- * y dibujar una linea de beeper desde el propio beeper hasta la pared de la derecha, volver y dibujar
+ * y dibujar una linea de beepers desde el propio beeper hasta la pared de la derecha, volver y dibujar
  * otra línea desde el beeper que había al inicio hasta el suelo. 
- * Después de Karel debe volver al inicio quedándose en la esquina inferior izquierda y mirando al este.
+ * Después Karel debe volver al inicio quedándose en la esquina inferior izquierda y mirando al este.
  *
  */
 
@@ -26,7 +26,7 @@ public class Cruz extends KarelMejorada{
 	}
 
 
-
+	//Este método es para que Karel encuentre el beeper que hay en el mundo.
 	private void encuentraBeeper(){
 		if (facingWest()&&frontIsBlocked()){
 			turnRight();
@@ -40,7 +40,8 @@ public class Cruz extends KarelMejorada{
 		}
 	}
 
-
+	//Este método es para que Karel, una vez encontrado el beeper,
+	//empiece a dibujar las líneas de beepers.
 	private void dibujaCruz(){
 
 		if (beepersPresent()){
@@ -67,6 +68,8 @@ public class Cruz extends KarelMejorada{
 		}
 	}
 
+	//Método para que Karel vuelva al inicio, quedándose en la esquina 
+	//inferior izquierda y mirando al este.
 	private void vuelveAlInicio(){
 
 		if (frontIsBlocked()){
