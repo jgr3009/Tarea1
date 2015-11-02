@@ -32,6 +32,7 @@ public class MudanzasKarel extends KarelMejorada{
 				turnRight();
 			}
 		}
+		turnLeft();
 	}
 
 
@@ -39,7 +40,7 @@ public class MudanzasKarel extends KarelMejorada{
 		for (int i=	0;i	<6;i++)	{
 			putBeeper();
 		}
-		turnLeft();
+		
 		move();
 		for (int i=	0;i	<3;i++)	{
 			putBeeper();
