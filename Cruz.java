@@ -1,4 +1,10 @@
 
+/*
+ * Auto: JORGE GARCÍA ROJO
+ * 
+ * 
+ */
+
 import stanford.karel.*;
 
 public class Cruz extends KarelMejorada{
