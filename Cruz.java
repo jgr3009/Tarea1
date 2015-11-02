@@ -16,7 +16,8 @@ public class Cruz extends KarelMejorada{
 			//encuentraBeeper();
 			subeUnaFilaParaIzquierda();
 			subeUnaFilaParaDerecha();
-	}}
+	}
+		}
 		
 		
 	}
@@ -36,13 +37,12 @@ public class Cruz extends KarelMejorada{
 
 	private void subeUnaFilaParaIzquierda(){
 		//Hace que Karel suba una fila hacia su derecha cuando llega a la pared
-		while (frontIsClear()){
-			move();
+		
 		if (facingEast()&&frontIsBlocked()){
 			turnLeft();
 			move();
 			turnLeft();
-		}
+		
 	}
 	}
 	private void encuentraBeeper(){
