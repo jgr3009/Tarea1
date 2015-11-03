@@ -27,6 +27,9 @@ public class ExpandeBeepers extends KarelMejorada{
 					turnRight();
 					move();
 					turnRight();
+					while (frontIsClear()){
+						move();
+					}
 				}
 			}
 		}
