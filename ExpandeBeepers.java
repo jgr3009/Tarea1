@@ -19,14 +19,9 @@ public class ExpandeBeepers extends KarelMejorada{
 				pickBeeper();
 
 			}
-			/*turnLeft();
-			while (beepersInBag()){
-				putBeeper();
-				move();
-				if (frontIsBlocked()){
-					turnLeft();
-					while (frontIsClear()){
-						move();
+			turnLeft();
+			expandeBeepers();
+			
 
 						if (frontIsBlocked()){
 							turnLeft();
@@ -34,10 +29,10 @@ public class ExpandeBeepers extends KarelMejorada{
 
 					}
 
-				}
+				
 
 
-			}
+			
 
 
 			if (noBeepersInBag()){
@@ -49,11 +44,21 @@ public class ExpandeBeepers extends KarelMejorada{
 				}
 				turnLeft();
 
-			}*/
-		}
+			}
+		
 
 	}
+	private void expandeBeepers(){
+		while (beepersInBag()){
+			putBeeper();
+			move();
+			if (frontIsBlocked()){
+				turnLeft();
+				while (frontIsClear()){
+					move();
+	}
 
+			}
+			}
+	}
 }
-
-
