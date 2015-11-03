@@ -17,6 +17,7 @@ public class ExpandeBeepers extends KarelMejorada{
 			move();
 			while (beepersPresent()){
 				pickBeeper();
+				turnLeft();
 			}
 		}
 		
