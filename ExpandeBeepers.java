@@ -25,10 +25,11 @@ public class ExpandeBeepers extends KarelMejorada{
 				move();
 				if (frontIsBlocked()){
 					turnLeft();
+					while (frontIsClear()){
+						move();
+					}
 				}
-				while (frontIsClear()){
-					move();
-				}
+				
 				if (noBeepersInBag()){
 					turnRight();
 					move();
