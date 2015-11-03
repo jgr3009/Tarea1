@@ -33,13 +33,14 @@ public class ExpandeBeepers extends KarelMejorada{
 						}
 						
 					}
-					if (frontIsBlocked()&&facingSouth()){
-						turnLeft();
-					}
+					
 					}
 					
 					
 				}
+			if (frontIsBlocked()&&facingSouth()){
+				turnLeft();
+			}
 				
 				if (noBeepersInBag()){
 					turnRight();
