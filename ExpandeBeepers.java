@@ -29,37 +29,25 @@ public class ExpandeBeepers extends KarelMejorada{
 
 		}
 
-
-
-
-
-
-
-		
-
-
 	}
 	private void expandeBeepers(){
 		while (beepersInBag()){
 			putBeeper();
 			move();
-			if (noBeepersInBag()){
-				turnRight();
-				move();
-				turnRight();
-				while (frontIsClear()){
-					move();
-				}
-				turnLeft();
-
-			}
-			if (frontIsBlocked()){
-				turnLeft();
-				while (frontIsClear()){
-					move();
-				}
-
-			}
 		}
 	}
+
+	private void bajaAbajo(){
+		if (noBeepersInBag()){
+			turnRight();
+			move();
+			turnRight();
+			while (frontIsClear()){
+				move();
+			}
+			turnLeft();
+
+		}
+	}
+
 }
