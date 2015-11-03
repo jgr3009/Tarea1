@@ -29,12 +29,13 @@ public class ExpandeBeepers extends KarelMejorada{
 						move();
 						if (frontIsBlocked()){
 							turnLeft();
+							if (frontIsBlocked()&&notFacingSouth()){
+								turnLeft();
+							}
 						}
-						if (frontIsBlocked()&&notFacingSouth()){
-							turnLeft();
+						turnLeft(); 
 						}
-					}
-					turnLeft(); 
+						
 					}
 					
 				}
