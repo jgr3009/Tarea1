@@ -54,4 +54,4 @@ public class ExpandeBeepers extends KarelMejorada{
 		
 	}
 	
-}
+
