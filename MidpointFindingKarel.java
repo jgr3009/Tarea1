@@ -12,10 +12,11 @@ public class MidpointFindingKarel extends KarelMejorada {
 				daLaVuelta();
 				putBeeper();
 				
+				
 			}
 		}
 		if (beepersPresent()){
-			move();
+			daLaVuelta();
 		}
 		
 	}
