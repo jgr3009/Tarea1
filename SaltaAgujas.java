@@ -2,7 +2,8 @@
  * Autor: JORGE GARCÍA ROJO
  * 
  * En este ejercicio Karel empieza en la esquina inferior izquierda 
- * y mirando al este en un mundo de 9x10. Tiene que saltar las agujas, de una en una, sin soltar la aguja que está saltando.
+ * y mirando al este en un mundo de 9x10 (aunque también funciona en otros mundos).
+ * Tiene que saltar las agujas, de una en una, sin soltar la aguja que está saltando.
  * Cuando salte la última aguja, debe subir hasta arriba, volver a bajar y quedarse en la esquina 
  * inferior derecha mirando al este.
  * 
