@@ -34,6 +34,7 @@ public class SaltaAgujas extends KarelMejorada{
 					turnRight();
 				}
 			}
+			//Cuando Karel llega la la esquina superior derecha, da la vuelta.
 			if (frontIsBlocked()&&facingNorth()){
 				daLaVuelta();
 			}
