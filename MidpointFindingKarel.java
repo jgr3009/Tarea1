@@ -6,7 +6,13 @@ public class MidpointFindingKarel extends KarelMejorada {
 	
 	public void run(){
 		
-		
+		while (frontIsClear()){
+			move();
+			if (frontIsBlocked()){
+				daLaVuelta();
+				putBeeper();
+			}
+		}
 		
 	}
 
