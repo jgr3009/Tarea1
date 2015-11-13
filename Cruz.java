@@ -88,6 +88,9 @@ public class Cruz extends KarelMejorada{
 				}
 			}
 		}
+		if (frontIsBlocked()&&facingNorth()){
+			daLaVuelta();
+		}
 
 	}
 
