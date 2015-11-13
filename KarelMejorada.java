@@ -9,9 +9,9 @@ import com.sun.org.apache.bcel.internal.generic.DADD;
  * 
  * 
  */
-import stanford.karel.Karel;
+import stanford.karel.*;
 
-public class KarelMejorada extends Karel{
+public class KarelMejorada extends SuperKarel{
 
 
 	/*
@@ -20,9 +20,7 @@ public class KarelMejorada extends Karel{
 	 */
 
 	public	void giraDerecha() {
-		turnLeft();
-		turnLeft();
-		turnLeft();
+		turnRight();
 	}
 
 	/*
