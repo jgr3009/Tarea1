@@ -31,6 +31,29 @@ public class Cruz extends KarelMejorada{
 	private void encuentraBeeper(){
 		if (facingWest()&&frontIsBlocked()){
 			turnRight();
+			if (beepersPresent()&&facingSouth()){
+				pickBeeper();
+				turnLeft();
+				while (frontIsClear()){
+					move();
+					putBeeper();
+					
+				}
+				if (frontIsBlocked()){
+					daLaVuelta();
+					while (beepersPresent()){
+						move();
+					}
+					if (noBeepersPresent()){
+						putBeeper();
+						turnLeft();
+					}
+					while (frontIsClear()){
+						move();
+						putBeeper();
+					}
+				}
+			}
 			if (frontIsBlocked()&&facingNorth()){
 				daLaVuelta();
 				while (frontIsClear()){
@@ -97,29 +120,7 @@ public class Cruz extends KarelMejorada{
 				}
 			}
 		}
-		if (beepersPresent()&&facingSouth()){
-			pickBeeper();
-			turnLeft();
-			while (frontIsClear()){
-				move();
-				putBeeper();
-				
-			}
-			if (frontIsBlocked()){
-				daLaVuelta();
-				while (beepersPresent()){
-					move();
-				}
-				if (noBeepersPresent()){
-					putBeeper();
-					turnLeft();
-				}
-				while (frontIsClear()){
-					move();
-					putBeeper();
-				}
-			}
-		}
+		
 		
 
 	}
