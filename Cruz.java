@@ -68,7 +68,7 @@ public class Cruz extends KarelMejorada{
 		}
 		if (beepersPresent()&&facingEast()){
 			pickBeeper();
-			daLaVuelta();
+			
 			while (frontIsClear()){
 				move();
 				putBeeper();
