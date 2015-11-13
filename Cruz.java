@@ -38,6 +38,9 @@ public class Cruz extends KarelMejorada{
 			move();
 			turnLeft();
 		}
+		if (frontIsBlocked()&&facingNorth()){
+			daLaVuelta();
+		}
 	}
 
 	//Este método es para que Karel, una vez encontrado el beeper,
@@ -50,9 +53,7 @@ public class Cruz extends KarelMejorada{
 			while (frontIsClear()){
 				move();
 				putBeeper();
-				if (frontIsBlocked()&&facingNorth()){
-					daLaVuelta();
-				}
+				
 			}
 			if (frontIsBlocked()){
 				daLaVuelta();
