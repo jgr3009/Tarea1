@@ -18,9 +18,7 @@ public class Cruz extends KarelMejorada{
 
 		while (frontIsClear()){
 			move();
-			if (frontIsBlocked()&&facingNorth()){
-				daLaVuelta();
-			}
+			
 
 			encuentraBeeper();
 			dibujaCruz();
@@ -33,6 +31,9 @@ public class Cruz extends KarelMejorada{
 	private void encuentraBeeper(){
 		if (facingWest()&&frontIsBlocked()){
 			turnRight();
+			if (frontIsBlocked()&&facingNorth()){
+				daLaVuelta();
+			}
 			move();
 			turnRight();
 		}
