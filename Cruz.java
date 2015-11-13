@@ -50,6 +50,9 @@ public class Cruz extends KarelMejorada{
 			while (frontIsClear()){
 				move();
 				putBeeper();
+				if (frontIsBlocked()&&facingNorth()){
+					daLaVuelta();
+				}
 			}
 			if (frontIsBlocked()){
 				daLaVuelta();
@@ -88,9 +91,7 @@ public class Cruz extends KarelMejorada{
 				}
 			}
 		}
-		if (frontIsBlocked()&&facingNorth()){
-			daLaVuelta();
-		}
+		
 
 	}
 
