@@ -35,29 +35,7 @@ public class Cruz extends KarelMejorada{
 				daLaVuelta();
 				while (frontIsClear()){
 					move();}
-				if (beepersPresent()&&facingSouth()){
-					pickBeeper();
-					turnLeft();
-					while (frontIsClear()){
-						move();
-						putBeeper();
-						
-					}
-					if (frontIsBlocked()){
-						daLaVuelta();
-						while (beepersPresent()){
-							move();
-						}
-						if (noBeepersPresent()){
-							putBeeper();
-							turnLeft();
-						}
-						while (frontIsClear()){
-							move();
-							putBeeper();
-						}
-					}
-				}
+				
 			}
 			move();
 			turnRight();
@@ -103,6 +81,29 @@ public class Cruz extends KarelMejorada{
 			while (frontIsClear()){
 				move();
 				putBeeper();
+			}
+			if (frontIsBlocked()){
+				daLaVuelta();
+				while (beepersPresent()){
+					move();
+				}
+				if (noBeepersPresent()){
+					putBeeper();
+					turnLeft();
+				}
+				while (frontIsClear()){
+					move();
+					putBeeper();
+				}
+			}
+		}
+		if (beepersPresent()&&facingSouth()){
+			pickBeeper();
+			turnLeft();
+			while (frontIsClear()){
+				move();
+				putBeeper();
+				
 			}
 			if (frontIsBlocked()){
 				daLaVuelta();
