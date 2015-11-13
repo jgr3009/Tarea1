@@ -29,8 +29,8 @@ public class Cruz extends KarelMejorada{
 
 	//Este método es para que Karel encuentre el beeper que hay en el mundo.
 	private void encuentraBeeper(){
-		if (facingWest()&&frontIsBlocked()){
-			if (beepersPresent()&&facingNorth()){
+		if (facingWest()&&frontIsBlocked()&&beepersPresent()){
+			
 				pickBeeper();
 				turnLeft();
 				while (frontIsClear()){
