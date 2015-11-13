@@ -66,6 +66,29 @@ public class Cruz extends KarelMejorada{
 				}
 			}
 		}
+		if (beepersPresent()&&facingEast()){
+			pickBeeper();
+			daLaVuelta();
+			while (frontIsClear()){
+				move();
+				putBeeper();
+			}
+			if (frontIsBlocked()){
+				daLaVuelta();
+				while (beepersPresent()){
+					move();
+				}
+				if (noBeepersPresent()){
+					putBeeper();
+					turnLeft();
+				}
+				while (frontIsClear()){
+					move();
+					putBeeper();
+				}
+			}
+		}
+
 	}
 
 	//Método para que Karel vuelva al inicio, quedándose en la esquina 
