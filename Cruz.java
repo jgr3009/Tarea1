@@ -44,7 +44,7 @@ public class Cruz extends KarelMejorada{
 	//empiece a dibujar las líneas de beepers.
 	private void dibujaCruz(){
 
-		if (beepersPresent()){
+		if (beepersPresent()&&facingWest()){
 			pickBeeper();
 			daLaVuelta();
 			while (frontIsClear()){
