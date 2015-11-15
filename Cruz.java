@@ -64,13 +64,9 @@ public class Cruz extends KarelMejorada{
 			move();
 			turnRight();
 		}
-		if (facingEast()&&frontIsBlocked()){
-			turnLeft();
-			move();
-			turnLeft();
-		}
 		
-	}
+		
+	
 
 	//Este método es para que Karel, una vez encontrado el beeper,
 	//empiece a dibujar las líneas de beepers.
