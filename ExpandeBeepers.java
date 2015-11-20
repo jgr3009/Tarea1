@@ -27,12 +27,13 @@ public class ExpandeBeepers extends KarelMejorada{
 			if (noBeepersInBag()){
 				daLaVuelta();
 			}
-			while (frontIsClear()){
+			/*while (frontIsClear()){
 				move();
-			}
+			}*/
 			turnLeft();
 		}
 
 
-	}
+	
+		}
 }
