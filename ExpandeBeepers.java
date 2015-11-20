@@ -1,14 +1,13 @@
 import stanford.karel.*;
 
-public class ExpandeBeepers extends KarelMejorada
-{
+public class ExpandeBeepers extends KarelMejorada{
 
 	public void run(){
 		while (frontIsClear()){
 			move();
 			if (beepersPresent()){
 				turnLeft();
-				pickBeeper();
+				
 				while (beepersPresent()){
 					pickBeeper();
 
@@ -26,9 +25,7 @@ public class ExpandeBeepers extends KarelMejorada
 
 			}
 			if (noBeepersInBag()){
-				turnRight();
-				move();
-				turnRight();
+				daLaVuelta();
 			}
 			while (frontIsClear()){
 				move();
